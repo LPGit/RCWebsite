@@ -1,6 +1,47 @@
-$theme-colors: (
+$theme-colors: (  
     "primary": #2193f3,
   );
+
+  body {
+    padding-top: 60px;
+  };
+
+
+  .jumbotron {
+    margin-bottom: 0px;
+    background-image: url(../resources/BlueTileBg.png);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+};
+
+// 233 80 15
+$color-second: #e9500f;
+$color-second2: #eb4600;
+
+
+.btn-second {
+  color: #fff;
+  background-color:$color-second;
+  border-color: $color-second; }
+  .btn-second:hover {
+    color: #fff;
+    background-color: $color-second2;
+    border-color: $color-second2; }
+  .btn-second:focus, .btn-second.focus {
+    box-shadow: 0 0 0 0.2rem rgba(233, 80, 15, 0.5); }
+  .btn-second.disabled, .btn-second:disabled {
+    background-color: $color-second;
+    border-color: $color-second; }
+  .btn-second:not([disabled]):not(.disabled):active, .btn-second:not([disabled]):not(.disabled).active,
+  .show > .btn-second.dropdown-toggle {
+    color: #fff;
+    background-color: $color-second;
+    border-color: $color-second;
+    box-shadow: 0 0 0 0.2rem rgba(233, 80, 15, 0.5); }
+
+
+
 
 //   // Required
 // @import "../../node_modules/bootstrap/scss/functions";
@@ -16,3 +57,39 @@ $theme-colors: (
 
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+
+
+
+
+
+
+
+
+// .navbar {
+//   min-height: 80px;
+// }
+
+// .navbar-brand {
+//   padding: 0 15px;
+//   height: 80px;
+//   line-height: 80px;
+// }
+
+// .navbar-toggle {
+//   /* (80px - button height 34px) / 2 = 23px */
+//   margin-top: 23px;
+//   padding: 9px 10px !important;
+// }
+
+// @media (min-width: 768px) {
+//   .navbar-nav > li > a {
+//     /* (80px - line-height of 27px) / 2 = 26.5px */
+//     padding-top: 26.5px;
+//     padding-bottom: 26.5px;
+//     line-height: 27px;
+//   }
+// }

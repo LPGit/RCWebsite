@@ -1,3 +1,37 @@
+body {
+  padding-top: 60px; }
+
+.jumbotron {
+  margin-bottom: 0px;
+  background-image: url(../resources/BlueTileBg.png);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.btn-second {
+  color: #fff;
+  background-color: #e9500f;
+  border-color: #e9500f; }
+
+.btn-second:hover {
+  color: #fff;
+  background-color: #eb4600;
+  border-color: #eb4600; }
+
+.btn-second:focus, .btn-second.focus {
+  box-shadow: 0 0 0 0.2rem rgba(233, 80, 15, 0.5); }
+
+.btn-second.disabled, .btn-second:disabled {
+  background-color: #e9500f;
+  border-color: #e9500f; }
+
+.btn-second:not([disabled]):not(.disabled):active, .btn-second:not([disabled]):not(.disabled).active,
+.show > .btn-second.dropdown-toggle {
+  color: #fff;
+  background-color: #e9500f;
+  border-color: #e9500f;
+  box-shadow: 0 0 0 0.2rem rgba(233, 80, 15, 0.5); }
+
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
