@@ -1,12 +1,19 @@
 body {
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding-bottom: 0px; }
 
-.jumbotron {
+.main-jumbotron {
   margin-bottom: 0px;
   background-image: url(../resources/BlueTileBg.png);
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat; }
+
+.navbar {
+  -webkit-box-shadow: 0 8px 6px -6px #3f3f3f;
+  -moz-box-shadow: 0 8px 6px -6px #3f3f3f;
+  box-shadow: 0 8px 6px -6px #3f3f3f;
+  /* the rest of your styling */ }
 
 .btn-second {
   color: #fff;
@@ -18,14 +25,17 @@ body {
   background-color: #eb4600;
   border-color: #eb4600; }
 
-.btn-second:focus, .btn-second.focus {
+.btn-second:focus,
+.btn-second.focus {
   box-shadow: 0 0 0 0.2rem rgba(233, 80, 15, 0.5); }
 
-.btn-second.disabled, .btn-second:disabled {
+.btn-second.disabled,
+.btn-second:disabled {
   background-color: #e9500f;
   border-color: #e9500f; }
 
-.btn-second:not([disabled]):not(.disabled):active, .btn-second:not([disabled]):not(.disabled).active,
+.btn-second:not([disabled]):not(.disabled):active,
+.btn-second:not([disabled]):not(.disabled).active,
 .show > .btn-second.dropdown-toggle {
   color: #fff;
   background-color: #e9500f;
