@@ -20,6 +20,11 @@ $shadow-color: #3f3f3f;
     /* the rest of your styling */
 }
 
+@media screen and (min-width: 768px) {
+	
+	#exampleModal .modal-dialog  {width:90%;}
+
+}
 // 233 80 15
 $color-second: #e9500f;
 $color-second2: #eb4600;
