@@ -5908,3 +5908,12 @@ a.text-dark:focus, a.text-dark:hover {
 
 .invisible {
   visibility: hidden !important; }
+
+.brand-lg-image {
+  display: none; }
+
+@media (min-width: 992px) {
+  .brand-xs-image {
+    display: none; }
+  .brand-lg-image {
+    display: block; } }

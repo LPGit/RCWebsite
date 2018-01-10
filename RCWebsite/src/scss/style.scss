@@ -1,3 +1,5 @@
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+
 // 33 147 243
 $theme-colors: ( "primary": #2193f3, );
 body {
@@ -20,6 +22,8 @@ $shadow-color: #3f3f3f;
     box-shadow: 0 8px 6px -6px $shadow-color;
     /* the rest of your styling */
 }
+
+
 
 // 233 80 15
 $color-second: #e9500f;
@@ -66,7 +70,9 @@ $color-second2: #eb4600;
 // @import "../../node_modules/bootstrap/scss/images";
 // @import "../../node_modules/bootstrap/scss/code";
 // @import "../../node_modules/bootstrap/scss/grid";
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
 // .navbar {
 //   min-height: 80px;
 // }
@@ -88,3 +94,18 @@ $color-second2: #eb4600;
 //     line-height: 27px;
 //   }
 // }
+
+
+.brand-lg-image {
+    display: none;
+}
+
+@include media-breakpoint-up(lg) {
+    .brand-xs-image {
+        display: none;
+    }
+    .brand-lg-image {
+        display: block;
+    }
+}
+
