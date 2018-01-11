@@ -1,12 +1,26 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
-
 // primary rgb: 33 147 243
 // alt-primary rgb: 233 80 15
 $theme-colors: ( "primary": #2193f3, "alt-primary":#e9500f);
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     padding-top: 60px;
-    padding-bottom: 0px
+    padding-bottom: 0px;
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
 }
 
 .main-jumbotron {
@@ -33,7 +47,7 @@ $shadow-color: #3f3f3f;
 .btn-second:hover {
     color: #fff;
     background-color: darken(theme-color("alt-primary"), 10%);
-    border-color:  darken(theme-color("alt-primary"), 10%);
+    border-color: darken(theme-color("alt-primary"), 10%);
 }
 
 .btn-second:focus,
@@ -43,16 +57,16 @@ $shadow-color: #3f3f3f;
 
 .btn-second.disabled,
 .btn-second:disabled {
-    background-color:  darken(theme-color("alt-primary"), 10%);
-    border-color:  darken(theme-color("alt-primary"), 10%);
+    background-color: darken(theme-color("alt-primary"), 10%);
+    border-color: darken(theme-color("alt-primary"), 10%);
 }
 
 .btn-second:not([disabled]):not(.disabled):active,
 .btn-second:not([disabled]):not(.disabled).active,
 .show>.btn-second.dropdown-toggle {
     color: #fff;
-    background-color:  darken(theme-color("alt-primary"), 10%);
-    border-color:  darken(theme-color("alt-primary"), 10%);
+    background-color: darken(theme-color("alt-primary"), 10%);
+    border-color: darken(theme-color("alt-primary"), 10%);
     box-shadow: 0 0 0 0.2rem rgba(theme-color("alt-primary"), 0.5);
 }
 
@@ -89,21 +103,3 @@ $shadow-color: #3f3f3f;
 
 
 
-
-
-html {
-    position: relative;
-    min-height: 100%;
-  }
-  body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: #f5f5f5;
-  }
