@@ -35,9 +35,11 @@ $shadow-color: #3f3f3f;
     -webkit-box-shadow: 0 8px 6px -6px $shadow-color;
     -moz-box-shadow: 0 8px 6px -6px $shadow-color;
     box-shadow: 0 8px 6px -6px $shadow-color;
-  
     li {
         white-space: nowrap
+    }
+    li.active a {
+        color: theme-color("primary") !important;
     }
 }
 
@@ -100,3 +102,8 @@ $shadow-color: #3f3f3f;
 // @import "../../node_modules/bootstrap/scss/images";
 // @import "../../node_modules/bootstrap/scss/code";
 // @import "../../node_modules/bootstrap/scss/grid";
+.nav-link-large {
+    @extend .nav-link;
+    @extend .font-weight-bold;
+    font-size: 1.125em;
+}
