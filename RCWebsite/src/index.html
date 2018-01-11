@@ -30,8 +30,8 @@
   <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img alt="RC" src="resources/RCLogo.svg" height="50" class="brand-xs-image">
-        <img alt="RC" src="resources/RCPlatformLogo.svg" height="50" class="brand-lg-image">
+        <img alt="RC" src="resources/RCLogo.svg" height="50" class=".hidden-md-up">
+        <img alt="RC" src="resources/RCPlatformLogo.svg" height="50" class=".hidden-sm-down">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -138,7 +138,9 @@
               <div class="modal-dialog modal-dialog-centered modal-lg" data-dismiss="modal" role="document">
                 <div class="modal-content">
                   <div class="modal-body">
-                    <img class="img-fluid" alt="Track Image" src="Resources/TrackEditor Dark.png">
+                    <div>
+                      <img class="img-fluid mx-auto d-block" alt="Track Image" src="Resources/TrackEditor Dark.png">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -244,7 +246,6 @@
             <hr class="bg-white">
             <h3>Tasks</h3>
             <ul>
-              <li>check if we can have wider modals</li>
               <li>improve navbar</li>
               <li>add useful pdfs</li>
               <li>call to action: newsfeed subscription or contact</li>
@@ -254,6 +255,7 @@
               <li>use some templating framework: angular 2, react, asp, php</li>
               <li>implement google analytics</li>
               <li>use VSTS CI</li>
+              <li>wider picture modals</li>
               <hr class="bg-white">
               <li>better jumbotron loading &#10004;</li>
               <li>add pdf downloads &#10004;</li>

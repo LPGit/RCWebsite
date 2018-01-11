@@ -2,7 +2,6 @@
 // primary rgb: 33 147 243
 // alt-primary rgb: 233 80 15
 $theme-colors: ( "primary": #2193f3, "alt-primary":#e9500f);
-
 html {
     position: relative;
     min-height: 100%;
@@ -70,19 +69,19 @@ $shadow-color: #3f3f3f;
     box-shadow: 0 0 0 0.2rem rgba(theme-color("alt-primary"), 0.5);
 }
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
-.brand-lg-image {
-    display: none;
-}
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+// .brand-lg-image {
+//     display: none;
+// }
 
-@include media-breakpoint-up(lg) {
-    .brand-xs-image {
-        display: none;
-    }
-    .brand-lg-image {
-        display: block;
-    }
-}
+// @include media-breakpoint-up(lg) {
+//     .brand-xs-image {
+//         display: none;
+//     }
+//     .brand-lg-image {
+//         display: block;
+//     }
+// }
 
 // @include media-breakpoint-only(xs) { ... }
 // @include media-breakpoint-only(sm) { ... }
@@ -99,7 +98,3 @@ $shadow-color: #3f3f3f;
 // @import "../../node_modules/bootstrap/scss/images";
 // @import "../../node_modules/bootstrap/scss/code";
 // @import "../../node_modules/bootstrap/scss/grid";
-
-
-
-
