@@ -5893,6 +5893,8 @@ body {
   -webkit-box-shadow: 0 8px 6px -6px #3f3f3f;
   -moz-box-shadow: 0 8px 6px -6px #3f3f3f;
   box-shadow: 0 8px 6px -6px #3f3f3f; }
+  .navbar li {
+    white-space: nowrap; }
 
 .btn-second {
   color: #fff;

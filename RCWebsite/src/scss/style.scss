@@ -35,6 +35,10 @@ $shadow-color: #3f3f3f;
     -webkit-box-shadow: 0 8px 6px -6px $shadow-color;
     -moz-box-shadow: 0 8px 6px -6px $shadow-color;
     box-shadow: 0 8px 6px -6px $shadow-color;
+  
+    li {
+        white-space: nowrap
+    }
 }
 
 .btn-second {
@@ -73,7 +77,6 @@ $shadow-color: #3f3f3f;
 // .brand-lg-image {
 //     display: none;
 // }
-
 // @include media-breakpoint-up(lg) {
 //     .brand-xs-image {
 //         display: none;
@@ -82,7 +85,6 @@ $shadow-color: #3f3f3f;
 //         display: block;
 //     }
 // }
-
 // @include media-breakpoint-only(xs) { ... }
 // @include media-breakpoint-only(sm) { ... }
 // @include media-breakpoint-only(md) { ... }
