@@ -1,7 +1,9 @@
-//@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
-// 33 147 243
-$theme-colors: ( "primary": #2193f3, );
+
+// primary rgb: 33 147 243
+// alt-primary rgb: 233 80 15
+$theme-colors: ( "primary": #2193f3, "alt-primary":#e9500f);
 body {
     padding-top: 60px;
     padding-bottom: 0px
@@ -20,82 +22,41 @@ $shadow-color: #3f3f3f;
     -webkit-box-shadow: 0 8px 6px -6px $shadow-color;
     -moz-box-shadow: 0 8px 6px -6px $shadow-color;
     box-shadow: 0 8px 6px -6px $shadow-color;
-    /* the rest of your styling */
 }
 
-
-
-// 233 80 15
-$color-second: #e9500f;
-$color-second2: #eb4600;
 .btn-second {
     color: #fff;
-    background-color: $color-second;
-    border-color: $color-second;
+    background-color: theme-color("alt-primary");
+    border-color: darken(theme-color("alt-primary"), 10%);
 }
 
 .btn-second:hover {
     color: #fff;
-    background-color: $color-second2;
-    border-color: $color-second2;
+    background-color: darken(theme-color("alt-primary"), 10%);
+    border-color:  darken(theme-color("alt-primary"), 10%);
 }
 
 .btn-second:focus,
 .btn-second.focus {
-    box-shadow: 0 0 0 0.2rem rgba(233, 80, 15, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(theme-color("alt-primary"), 0.5);
 }
 
 .btn-second.disabled,
 .btn-second:disabled {
-    background-color: $color-second;
-    border-color: $color-second;
+    background-color:  darken(theme-color("alt-primary"), 10%);
+    border-color:  darken(theme-color("alt-primary"), 10%);
 }
 
 .btn-second:not([disabled]):not(.disabled):active,
 .btn-second:not([disabled]):not(.disabled).active,
 .show>.btn-second.dropdown-toggle {
     color: #fff;
-    background-color: $color-second;
-    border-color: $color-second;
-    box-shadow: 0 0 0 0.2rem rgba(233, 80, 15, 0.5);
+    background-color:  darken(theme-color("alt-primary"), 10%);
+    border-color:  darken(theme-color("alt-primary"), 10%);
+    box-shadow: 0 0 0 0.2rem rgba(theme-color("alt-primary"), 0.5);
 }
 
-//   // Required
-// @import "../../node_modules/bootstrap/scss/functions";
-// @import "../../node_modules/bootstrap/scss/variables";
-// @import "../../node_modules/bootstrap/scss/mixins";
-// // Optional
-// @import "../../node_modules/bootstrap/scss/reboot";
-// @import "../../node_modules/bootstrap/scss/type";
-// @import "../../node_modules/bootstrap/scss/images";
-// @import "../../node_modules/bootstrap/scss/code";
-// @import "../../node_modules/bootstrap/scss/grid";
-
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
-// .navbar {
-//   min-height: 80px;
-// }
-// .navbar-brand {
-//   padding: 0 15px;
-//   height: 80px;
-//   line-height: 80px;
-// }
-// .navbar-toggle {
-//   /* (80px - button height 34px) / 2 = 23px */
-//   margin-top: 23px;
-//   padding: 9px 10px !important;
-// }
-// @media (min-width: 768px) {
-//   .navbar-nav > li > a {
-//     /* (80px - line-height of 27px) / 2 = 26.5px */
-//     padding-top: 26.5px;
-//     padding-bottom: 26.5px;
-//     line-height: 27px;
-//   }
-// }
-
-
 .brand-lg-image {
     display: none;
 }
@@ -109,3 +70,40 @@ $color-second2: #eb4600;
     }
 }
 
+// @include media-breakpoint-only(xs) { ... }
+// @include media-breakpoint-only(sm) { ... }
+// @include media-breakpoint-only(md) { ... }
+// @include media-breakpoint-only(lg) { ... }
+// @include media-breakpoint-only(xl) { ... }
+// Required
+// @import "../../node_modules/bootstrap/scss/functions";
+// @import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/mixins";
+// Optional
+// @import "../../node_modules/bootstrap/scss/reboot";
+// @import "../../node_modules/bootstrap/scss/type";
+// @import "../../node_modules/bootstrap/scss/images";
+// @import "../../node_modules/bootstrap/scss/code";
+// @import "../../node_modules/bootstrap/scss/grid";
+
+
+
+
+
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+  }
