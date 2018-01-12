@@ -43,6 +43,12 @@ $shadow-color: #3f3f3f;
     }
 }
 
+.nav-link-large {
+    @extend .nav-link;
+    @extend .font-weight-bold;
+    font-size: 1.125em;
+}
+
 .btn-second {
     color: #fff;
     background-color: theme-color("alt-primary");
@@ -102,8 +108,110 @@ $shadow-color: #3f3f3f;
 // @import "../../node_modules/bootstrap/scss/images";
 // @import "../../node_modules/bootstrap/scss/code";
 // @import "../../node_modules/bootstrap/scss/grid";
-.nav-link-large {
-    @extend .nav-link;
-    @extend .font-weight-bold;
-    font-size: 1.125em;
+.server {
+    border-radius: 25px;
+    border: 2px solid theme-color("alt-primary");
+    background: theme-color("primary");
+    width: 200px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}
+
+// .item-left {
+//     border: 2px solid theme-color("alt-primary");
+//     width: 250px;
+//     height: 30px;
+//     margin: 5px;
+//     line-height: 30px;
+//     text-align: center;
+// }
+// .dotted {
+//     border: 1px dotted #ff0000;
+// }
+// .cell {
+//     width: 250px;
+//     height: 50px;
+// }
+// .hline {
+//     width: 50px;
+//     border-top: 2px solid #555;
+//     transform: translateY(50%);
+// }
+// .vline {
+//     height: 50px;
+//     width: 2px;
+//     border: 1px solid #555;   
+// }
+// .vline-top {
+//     height: 50px;
+//     width: 2px;
+//     border-left: 2px solid #555;   
+//     transform: translateY(50%); 
+// }
+// .vline-bot {
+//     height: 50px;
+//     width: 2px;
+//     border-left: 2px solid #555;   
+//     transform: translateY(-22px); 
+// }
+// .cell-inner {
+//     border: 2px solid theme-color("alt-primary");
+//     width: 250px;
+//     height: 30px;
+//     line-height: 30px;
+//     text-align: center;
+// }
+// .mycol{
+//     display: flex;
+//     flex-direction:column ;
+//   }
+//   .pdiag-item{
+//     display: flex;
+//     width: 200px;
+//     height: 60px;
+//   }
+//   .flex{
+//       display: flex;
+//   }
+.dotted {
+    border: 1px dotted #ff0000;
+}
+
+.product-diagram {
+    .item {
+        display: flex;
+        width: 200px;
+        height: 60px;
+    }
+    .item-padding {
+        padding: 5px 0px 5px 0px;
+    }
+    .item-content {
+        border: 2px solid theme-color("alt-primary");
+        padding: 5px;
+    }
+    .vcenter {
+        align-self: center;
+    }
+    .hline {
+        height: 2px;
+        width: 50px;
+        background: #000;
+        align-self: center;
+    }
+    .vline {
+        width: 2px;
+        background: #000;
+    }
+    .vline-top {
+        width: 2px;
+        background: #000;
+        transform: translateY(29px)
+    }
+    .vline-bot {
+        width: 2px;
+        background: #000;
+        transform: translateY(-29px)
+    }
 }
