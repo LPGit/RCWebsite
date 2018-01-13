@@ -5936,7 +5936,57 @@ body {
   border-color: #b9400c;
   box-shadow: 0 0 0 0.2rem rgba(233, 80, 15, 0.5); }
 
-.server {
+.dotted {
+  border: 1px dotted #ff0000; }
+
+.product-diagram .mycol {
+  display: flex;
+  flex-flow: column; }
+
+.product-diagram .item {
+  display: flex;
+  width: 252px;
+  height: 100px; }
+
+.product-diagram .item-content {
+  width: 200px;
+  border: 2px solid #e9500f;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px; }
+
+.product-diagram .item-padding {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+.product-diagram .hline {
+  height: 2px;
+  width: 50px;
+  background: #555;
+  align-self: center; }
+
+.product-diagram .vline {
+  width: 2px;
+  background: #555; }
+
+.product-diagram .vline-top {
+  width: 2px;
+  background: #555;
+  transform: translateY(49px); }
+
+.product-diagram .vline-bot {
+  width: 2px;
+  background: #555;
+  transform: translateY(-49px); }
+
+.product-diagram .connector {
+  height: 2px;
+  width: 100px;
+  background: #555;
+  align-self: center; }
+
+.product-diagram .server {
   border-radius: 25px;
   border: 2px solid #e9500f;
   background: #2193f3;
@@ -5944,41 +5994,3 @@ body {
   height: 150px;
   line-height: 150px;
   text-align: center; }
-
-.dotted {
-  border: 1px dotted #ff0000; }
-
-.product-diagram .item {
-  display: flex;
-  width: 200px;
-  height: 60px; }
-
-.product-diagram .item-padding {
-  padding: 5px 0px 5px 0px; }
-
-.product-diagram .item-content {
-  border: 2px solid #e9500f;
-  padding: 5px; }
-
-.product-diagram .vcenter {
-  align-self: center; }
-
-.product-diagram .hline {
-  height: 2px;
-  width: 50px;
-  background: #000;
-  align-self: center; }
-
-.product-diagram .vline {
-  width: 2px;
-  background: #000; }
-
-.product-diagram .vline-top {
-  width: 2px;
-  background: #000;
-  transform: translateY(29px); }
-
-.product-diagram .vline-bot {
-  width: 2px;
-  background: #000;
-  transform: translateY(-29px); }
