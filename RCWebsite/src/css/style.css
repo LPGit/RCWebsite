@@ -5943,27 +5943,64 @@ body {
   display: flex;
   flex-flow: column; }
 
-.product-diagram .item {
+.product-diagram .header-placeholder {
   display: flex;
-  width: 252px;
-  height: 100px; }
+  height: 75px; }
 
-.product-diagram .item-content {
-  width: 200px;
+.product-diagram .header {
+  display: flex;
+  height: 75px; }
+
+.product-diagram .header-content, .product-diagram .header-content-alt {
   border: 2px solid #e9500f;
+  background: #e9500f;
+  color: #fff;
+  width: 220px;
   padding: 5px;
   text-align: center;
   vertical-align: middle;
-  line-height: 40px; }
+  line-height: 35px; }
+
+.product-diagram .header-content-alt {
+  border: 2px solid #2193f3;
+  background: #2193f3;
+  margin-left: 35px; }
+
+.product-diagram .item {
+  display: flex;
+  width: 272px;
+  width: auto;
+  height: 65px; }
+
+.product-diagram .item-content {
+  width: 220px;
+  border: 2px solid #e9500f;
+  height: 45px;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 35px; }
 
 .product-diagram .item-padding {
-  padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.product-diagram .item-content-info {
+  width: 270px;
+  padding: 5px;
+  border: 1px solid #888;
+  color: #888; }
 
 .product-diagram .hline {
   height: 2px;
-  width: 50px;
+  width: 35px;
   background: #555;
+  align-self: center; }
+
+.product-diagram .hline-alt {
+  height: 1px;
+  width: 35px;
+  background: #888;
   align-self: center; }
 
 .product-diagram .vline {
@@ -5973,16 +6010,16 @@ body {
 .product-diagram .vline-top {
   width: 2px;
   background: #555;
-  transform: translateY(49px); }
+  transform: translateY(31.5px); }
 
 .product-diagram .vline-bot {
   width: 2px;
   background: #555;
-  transform: translateY(-49px); }
+  transform: translateY(-31.5px); }
 
 .product-diagram .connector {
   height: 2px;
-  width: 100px;
+  width: 60px;
   background: #555;
   align-self: center; }
 
@@ -5990,7 +6027,7 @@ body {
   border-radius: 25px;
   border: 2px solid #e9500f;
   background: #2193f3;
-  width: 200px;
+  width: 180px;
   height: 150px;
   line-height: 150px;
   text-align: center; }

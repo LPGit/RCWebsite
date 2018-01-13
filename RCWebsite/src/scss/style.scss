@@ -112,23 +112,51 @@ $shadow-color: #3f3f3f;
     border: 1px dotted #ff0000;
 }
 
-$itemWidth: 200px;
-$itemHeight: 100px;
-$itemPadding: 25px;
-$grey: #555;
 .product-diagram {
+    $itemWidth: 220px;
+    $itemHeight: 65px;
+    $itemPadding: 10px;
+    $hlineLength: 35px;
+    $grey: #555;
+    $lightGrey: #888;
     .mycol {
         display: flex;
         flex-flow: column;
     }
+    .header-placeholder {
+        display: flex;
+        height: $itemHeight + 10px;
+    }
+    .header {
+        display: flex;
+        height: $itemHeight + 10px;
+    }
+    .header-content {
+        border: 2px solid theme-color("alt-primary");
+        background: theme-color("alt-primary");
+        color: #fff;
+        width: $itemWidth;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: $itemHeight - 2*$itemPadding - 10px;
+    }
+    .header-content-alt {
+        @extend .header-content;
+        border: 2px solid theme-color("primary");
+        background: theme-color("primary");
+        margin-left: $hlineLength;
+    }
     .item {
         display: flex;
         width: $itemWidth +52px;
+        width: auto;
         height: $itemHeight;
     }
     .item-content {
         width: $itemWidth;
         border: 2px solid theme-color("alt-primary");
+        height: $itemHeight - 2*$itemPadding;
         padding: 5px;
         text-align: center;
         vertical-align: middle;
@@ -138,12 +166,25 @@ $grey: #555;
         padding-top: $itemPadding;
         padding-bottom: $itemPadding;
     }
+    .item-content-info {
+        width: 270px;
+        padding: 5px;
+        border: 1px solid $lightGrey;
+        color: $lightGrey;
+    } 
     .hline {
         height: 2px;
-        width: 50px;
+        width: $hlineLength;
         background: $grey;
         align-self: center;
     }
+    .hline-alt {
+        height: 1px;
+        width: $hlineLength;
+        background: $lightGrey;
+        align-self: center;
+    }
+
     .vline {
         width: 2px;
         background: $grey;
@@ -160,7 +201,7 @@ $grey: #555;
     }
     .connector {
         height: 2px;
-        width: 100px;
+        width: 60px;
         background: $grey;
         align-self: center;
     }
@@ -168,7 +209,7 @@ $grey: #555;
         border-radius: 25px;
         border: 2px solid theme-color("alt-primary");
         background: theme-color("primary");
-        width: 200px;
+        width: 180px;
         height: 150px;
         line-height: 150px;
         text-align: center;
