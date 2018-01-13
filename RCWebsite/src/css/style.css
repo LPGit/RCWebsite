@@ -5894,7 +5894,7 @@ button.bg-dark:hover {
 .font-weight-normal {
   font-weight: 400 !important; }
 
-.font-weight-bold, .nav-link-large {
+.font-weight-bold {
   font-weight: 700 !important; }
 
 .font-italic {
@@ -5945,10 +5945,10 @@ a.text-danger:focus, a.text-danger:hover {
 a.text-light:focus, a.text-light:hover {
   color: #dae0e5 !important; }
 
-.text-dark {
+.text-dark, .nav-link-large {
   color: #343a40 !important; }
 
-a.text-dark:focus, a.text-dark:hover {
+a.text-dark:focus, a.nav-link-large:focus, a.text-dark:hover, a.nav-link-large:hover {
   color: #1d2124 !important; }
 
 .text-muted {
@@ -6043,8 +6043,15 @@ body {
   .navbar li.active a {
     color: #2193f3 !important; }
 
+.nav-link, .nav-link-large {
+  padding: 0; }
+
 .nav-link-large {
-  font-size: 1.125em; }
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.7em;
+  margin: 0 0.1em;
+  padding: 0; }
 
 .btn-second {
   color: #fff;

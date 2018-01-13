@@ -43,10 +43,18 @@ $shadow-color: #3f3f3f;
     }
 }
 
+.nav-link {
+    padding: 0;
+}
+
 .nav-link-large {
-    @extend .nav-link;
-    @extend .font-weight-bold;
-    font-size: 1.125em;
+    @extend .nav-link; //@extend .font-weight-bold;
+    @extend .text-dark;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.7em;
+    margin: 0 0.1em;
+    padding: 0;
 }
 
 .btn-second {
@@ -171,7 +179,7 @@ $shadow-color: #3f3f3f;
         padding: 5px;
         border: 1px solid $lightGrey;
         color: $lightGrey;
-    } 
+    }
     .hline {
         height: 2px;
         width: $hlineLength;
@@ -184,7 +192,6 @@ $shadow-color: #3f3f3f;
         background: $lightGrey;
         align-self: center;
     }
-
     .vline {
         width: 2px;
         background: $grey;
