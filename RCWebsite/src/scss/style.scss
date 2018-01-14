@@ -24,8 +24,7 @@ body {
 
 .main-jumbotron {
     margin-bottom: 0px;
-     background-image: url(../resources/BlueTileBg.jpg);
-    //background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));
+    background-image: url(../resources/BlueTileBg.jpg); //background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,7 +38,7 @@ $shadow-color: #3f3f3f;
     li {
         white-space: nowrap
     }
-    li.active a {
+    li.active-primary>a {
         color: theme-color("primary") !important;
     }
 }
@@ -222,4 +221,20 @@ $shadow-color: #3f3f3f;
         line-height: 150px;
         text-align: center;
     }
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-700 {
+    font-weight: 700;
 }

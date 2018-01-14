@@ -6040,7 +6040,7 @@ body {
   box-shadow: 0 8px 6px -6px #3f3f3f; }
   .navbar li {
     white-space: nowrap; }
-  .navbar li.active a {
+  .navbar li.active-primary > a {
     color: #2193f3 !important; }
 
 .nav-link, .nav-link-large {
@@ -6175,3 +6175,15 @@ body {
   height: 150px;
   line-height: 150px;
   text-align: center; }
+
+.font-weight-400 {
+  font-weight: 400; }
+
+.font-weight-500 {
+  font-weight: 500; }
+
+.font-weight-600 {
+  font-weight: 600; }
+
+.font-weight-700 {
+  font-weight: 700; }

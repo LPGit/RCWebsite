@@ -31,8 +31,8 @@
     <div class="container">
       <!-- Icon -->
       <a class="navbar-brand" href="/">
-        <img alt="RC" src="resources/RCLogo.svg" height="40" class="d-sm-none">
-        <img alt="RC" src="resources/RCPlatformLogo.svg" height="40" class="d-none d-sm-block">
+        <img alt="RC" src="/resources/RCLogo.svg" height="40" class="d-sm-none">
+        <img alt="RC" src="/resources/RCPlatformLogo.svg" height="40" class="d-none d-sm-block">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -44,27 +44,29 @@
 
         <!-- Bottom Links -->
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item active-primary">
             <a class="nav-link-large" href="/">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link-large" href="platform.html">RC Platform
-            </a>
+            <a class="nav-link-large" href="/platform.html">RC Platform</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link-large dropdown-toggle" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">RC Modules</a>
+            <a class="nav-link-large dropdown-toggle" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RC Modules</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="company.html">CornerTimes</a>
-              <a class="dropdown-item" href="company.html">Runsheet</a>
-              <a class="dropdown-item" href="company.html">Reporting</a>
+              <a class="dropdown-item" href="/modules/cornertimes.html">CornerTimes</a>
+              <a class="dropdown-item" href="/modules/reporting.html">Reporting</a>
+              <a class="dropdown-item" href="/modules/runsheet.html">Runsheet</a>
             </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link-large" href="company.html">Company</a>
+            <a class="nav-link-large" href="/service.html">Service</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link-large" href="/company.html">Company</a>
           </li>
 
 
@@ -74,11 +76,10 @@
         <!-- Top Links -->
         <ul class="nav navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="downloads.html">Downloads
-            </a>
+            <a class="nav-link" href="/downloads.html">Downloads</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="company.html">Contact</a>
+            <a class="nav-link" href="/contact.html">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="" data-toggle="modal" data-target="#devMessageModal">BETA</a>
@@ -98,8 +99,11 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron jumbotron-fluid main-jumbotron bg-gradient-primary">
       <div class="container">
-        <h1 class="display-3 text-white">Your Platform. Your Results.
-          <br> Your Advantage.</h1>
+        <h1 class="display-3 text-white font-weight-600">
+          Your Platform
+          <br>Your Results
+          <br>Your Advantage
+        </h1>
         <p class="text-white lead">Let the data work for you in a simple, reliable and effective way.
           <br> RC Platform. The platform to improve.
         </p>
@@ -251,36 +255,7 @@
         </div>
         <div class="modal-body bg-dark text-white">
           <div class="container bg-dark">
-            <p class="text-warning">
-              This site is still in development and not to be shared with others.
-            </p>
-            <hr class="bg-white">
-            <h3>Tasks</h3>
-            <ul>
-              <li>create and design the real content</li>
-              <li>add useful pdfs</li>
-              <li>implement asp backend</li>
-              <li>call to action: newsfeed subscription or contact</li>
-              <li>see how tabs or alternative layouts can be made</li>
-              <li>2 or 3 column jumbotron?</li>
-              <li>better jumbotron (= the big banner) image</li>
-              <li>make platform diagram responsive</li>
-              <li>implement google analytics</li>
-              <li>test smartphone reactiveness (=autolayout on different screens)</li>
-              <li>use some templating framework: angular 2, react, asp, php</li>              
-              <li>use VSTS CI</li>
-              <li>wider picture modals</li>
-              <hr class="bg-white">
-              <li>better jumbotron loading &#10004;</li>
-              <li>add pdf downloads &#10004;</li>
-              <li>responsive brand icon &#10004;</li>
-              <li>footer bug &#10004;</li>
-              <li>improve navbar &#10004;</li>
-              <li>create platfrom diagram &#10004;</li>   
-              <li>update to beta 3 of bootstrap 4, shouldn't break  anything up to now (13.01) &#10004;</li>      
-              <li>more narrow navbar, bigger font &#10004;</li>     
-            </ul>
-
+            <div id="devMessageContent"></div>
           </div>
         </div>
         <div class="modal-footer bg-dark">
@@ -298,6 +273,8 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"

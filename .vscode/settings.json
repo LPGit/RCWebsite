@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "RCWebsite/src/fav*": true,
+        "RCWebsite/src/android*": true,
+        "RCWebsite/src/apple*": true,
+        "RCWebsite/src/manifest.json": true,
+        "RCWebsite/src/mstile*": true,
+        "RCWebsite/src/browserconfig.xml": true,
+        ".deployment": true,
+        "RCWebsite/package.json": true,
+        "RCWebsite/package-lock.json": true,
+        ".vscode": true,
+    }
+}
