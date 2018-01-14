@@ -6029,7 +6029,9 @@ body {
 
 .main-jumbotron {
   margin-bottom: 0px;
-  background-image: url(../resources/BlueTileBg.jpg);
+  /* background-image: url(../resources/BlueTileBg.jpg); */
+  /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
+  background-image: url(../resources/BlueJumbotron3.svg);
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat; }
