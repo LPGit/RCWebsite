@@ -59,6 +59,31 @@ $shadow-color: #3f3f3f;
     padding: 0;
 }
 
+.nav-item.active .nav-link,
+.nav-item:hover .nav-link {
+    color: theme-color("primary") !important;
+}
+
+.navbar-nav>li>.dropdown-menu>.dropdown-item.active,
+.dropdown-item:active {
+    background-color: theme-color("primary")!important;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+
+/* Orange Button */
+
 .btn-second {
     color: #fff;
     background-color: theme-color("alt-primary");
