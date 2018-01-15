@@ -50,7 +50,7 @@ $shadow-color: #3f3f3f;
 }
 
 .nav-link-large {
-    @extend .nav-link; //@extend .font-weight-bold;
+    @extend .nav-link; 
     @extend .text-dark;
     font-size: 1.5em;
     font-weight: 300;
