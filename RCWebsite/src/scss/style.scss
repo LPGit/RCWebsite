@@ -1,7 +1,12 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 // primary rgb: 33 147 243
 // alt-primary rgb: 233 80 15
-$theme-colors: ( "primary": #2193f3, "alt-primary":#e9500f);
+// material design darker organe #FF3D00
+$theme-colors: ( "primary": #2193f3, "alt-primary":#ff5722);
+.bg-primary-alt {
+    background-color: theme-color("alt-primary") !important;
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -32,6 +37,14 @@ body {
     background-repeat: no-repeat;
 }
 
+.jumbotron-orange {
+    margin-bottom: 0px;
+    background-image: url(../resources/OrangeJumbotron.svg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 $shadow-color: #3f3f3f;
 .navbar {
     -webkit-box-shadow: 0 8px 6px -6px $shadow-color;
@@ -50,7 +63,7 @@ $shadow-color: #3f3f3f;
 }
 
 .nav-link-large {
-    @extend .nav-link; 
+    @extend .nav-link;
     @extend .text-dark;
     font-size: 1.5em;
     font-weight: 300;

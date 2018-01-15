@@ -6010,6 +6010,9 @@ a.text-dark:focus, a.nav-link-large:focus, a.text-dark:hover, a.nav-link-large:h
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+.bg-primary-alt {
+  background-color: #ff5722 !important; }
+
 html {
   position: relative;
   min-height: 100%; }
@@ -6032,6 +6035,13 @@ body {
   /* background-image: url(../resources/BlueTileBg.jpg); */
   /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
   background-image: url(../resources/BlueJumbotron3.svg);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.jumbotron-orange {
+  margin-bottom: 0px;
+  background-image: url(../resources/OrangeJumbotron.svg);
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -6076,30 +6086,30 @@ body {
 /* Orange Button */
 .btn-second {
   color: #fff;
-  background-color: #e9500f;
-  border-color: #b9400c; }
+  background-color: #ff5722;
+  border-color: #ee3900; }
 
 .btn-second:hover {
   color: #fff;
-  background-color: #b9400c;
-  border-color: #b9400c; }
+  background-color: #ee3900;
+  border-color: #ee3900; }
 
 .btn-second:focus,
 .btn-second.focus {
-  box-shadow: 0 0 0 0.2rem rgba(233, 80, 15, 0.5); }
+  box-shadow: 0 0 0 0.2rem rgba(255, 87, 34, 0.5); }
 
 .btn-second.disabled,
 .btn-second:disabled {
-  background-color: #b9400c;
-  border-color: #b9400c; }
+  background-color: #ee3900;
+  border-color: #ee3900; }
 
 .btn-second:not([disabled]):not(.disabled):active,
 .btn-second:not([disabled]):not(.disabled).active,
 .show > .btn-second.dropdown-toggle {
   color: #fff;
-  background-color: #b9400c;
-  border-color: #b9400c;
-  box-shadow: 0 0 0 0.2rem rgba(233, 80, 15, 0.5); }
+  background-color: #ee3900;
+  border-color: #ee3900;
+  box-shadow: 0 0 0 0.2rem rgba(255, 87, 34, 0.5); }
 
 .dotted {
   border: 1px dotted #ff0000; }
@@ -6117,8 +6127,8 @@ body {
   height: 75px; }
 
 .product-diagram .header-content, .product-diagram .header-content-alt {
-  border: 2px solid #e9500f;
-  background: #e9500f;
+  border: 2px solid #ff5722;
+  background: #ff5722;
   color: #fff;
   width: 220px;
   padding: 5px;
@@ -6139,7 +6149,7 @@ body {
 
 .product-diagram .item-content {
   width: 220px;
-  border: 2px solid #e9500f;
+  border: 2px solid #ff5722;
   height: 45px;
   padding: 5px;
   text-align: center;
@@ -6190,7 +6200,7 @@ body {
 
 .product-diagram .server {
   border-radius: 25px;
-  border: 2px solid #e9500f;
+  border: 2px solid #ff5722;
   background: #2193f3;
   width: 180px;
   height: 150px;
