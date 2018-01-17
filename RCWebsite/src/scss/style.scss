@@ -197,6 +197,14 @@ $shadow-color: #3f3f3f;
     $hlineLength: 35px;
     $grey: #555;
     $lightGrey: #888;
+    $scale: 0.9;
+    .scale {
+        -ms-transform: scale($scale, $scale);
+        /* IE 9 */
+        -webkit-transform: scale($scale, $scale);
+        /* Safari */
+        transform: scale($scale, $scale);
+    }
     .mycol {
         display: flex;
         flex-flow: column;

@@ -86,7 +86,7 @@
     <main>
 
         <!-- Jumbo -->
-        <div class="jumbotron jumbotron-fluid main-jumbotron2">
+        <div class="jumbotron jumbotron-fluid main-jumbotron2 text-dark">
             <div class="container">
                 <div class="col-8">
                     <div class="text-white top-header">
@@ -344,6 +344,9 @@
                                 <li data-target="#screenshotsCarousel" data-slide-to="2" class="">
                                     <i></i>
                                 </li>
+                                <li data-target="#screenshotsCarousel" data-slide-to="3" class="">
+                                    <i></i>
+                                </li>
                             </ol>
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
@@ -361,339 +364,436 @@
             </div>
         </div>
 
-
-        <!-- Diagram -->
-
-        <div class="container mt-5 product-diagram">
-
-            <div class="row">
-                <!-- Left -->
-                <div class="mycol">
-                    <!-- Left Header -->
-                    <div class="header">
-                        <div class="d-flex item-padding">
-                            <h3 class="header-content">Data Input</h3>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Setup Data</div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="vline-top"></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Car Data</div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="d-flex item-padding">
-                            <div class="item-content">On-Track Data</div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Timing Data</div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Video Data</div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Simulation Data</div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div class="d-flex item-padding">
-                            <div class="item-content">On-Car Data</div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Telemetry</div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Supplier Data</div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Test Rig Data</div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="vline-bot"></div>
-                        </div>
-
+        <!-- Modules -->
+        <div class="py-5 bg-light text-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="mb-4">Modules From RC Platform</h1>
                     </div>
                 </div>
-                <!-- Connector -->
-                <div class="mycol">
-                    <div class="header-placeholder"></div>
-                    <div class="connector my-auto"></div>
-                </div>
-                <!-- Server -->
-                <div class="mycol">
-                    <div class="header-placeholder"></div>
-                    <div class="server my-auto">Server</div>
-                </div>
-                <!-- Connector -->
-                <div class="mycol">
-                    <div class="header-placeholder"></div>
-                    <div class="connector my-auto"></div>
-                </div>
-                <!-- Right -->
-                <div class="mycol">
-                    <!-- Right Header -->
-                    <div class="header">
-                        <div class="d-flex item-padding">
-                            <h3 class="header-content-alt">Data Output</h3>
-                        </div>
+                <div class="row">
+                    <div class="col-md-4 my-3">
+                        <img class="img-fluid d-block mb-4" src="/resources/modules/CornerTimesSmall.png">
+                        <h5>
+                            <b>CornerTimes</b>
+                        </h5>
+                        <p class="mt-1">Set it up and analyse. No hassle, just performance.</p>
                     </div>
-                    <!-- Runsheet -->
-                    <div class="item">
-                        <div class="d-flex ">
-                            <div class="vline-top"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Runsheet</div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="hline-alt"></div>
-                        </div>
-                        <div class="d-flex item-padding" style="height: 180px;">
-                            <div class="item-content-info">
-                                <ul>
-                                    <li>automatic timing import</li>
-                                    <li>automatic export of constants</li>
-                                    <li>multi user sharing</li>
-                                    <li>inputs from individual computers (tyres, crew chief)</li>
-                                    <li>publish data</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-md-4 my-3">
+                        <img class="img-fluid d-block mb-4" src="/resources/modules/RunsheetLightSmall.png">
+                        <h5>
+                            <b>Runsheet</b>
+                        </h5>
+                        <p class="mt-1">Integrate it in your toolchain. Convert your old runsheets into a more soldid and concurernt one.</p>
                     </div>
-                    <div class="item" style="height:120px;">
-                        <div class="d-flex">
-                            <div class="vline"></div>
-                        </div>
-                    </div>
-
-
-                    <!-- CornerTimes -->
-                    <div class="item">
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex item-padding">
-                            <div class="item-content">CornerTimes</div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="hline-alt"></div>
-                        </div>
-                        <div class="d-flex item-padding" style="height: 105px;">
-                            <div class="item-content-info">
-                                <ul>
-                                    <li>fast driver analysis</li>
-                                    <li>direct link to vehicle data</li>
-                                    <li>direct link to video data</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item" style="height:50px;">
-                        <div class="d-flex">
-                            <div class="vline"></div>
-                        </div>
-                    </div>
-
-                    <!-- Video Analyis -->
-                    <div class="item">
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Video Analysis</div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="hline-alt"></div>
-                        </div>
-                        <div class="d-flex item-padding" style="height: 105px;">
-                            <div class="item-content-info">
-                                <ul>
-                                    <li>automatic video recognition</li>
-                                    <li>linked to CornerTimes</li>
-                                    <li>On-board video or TV stream</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item" style="height:50px;">
-                        <div class="d-flex">
-                            <div class="vline"></div>
-                        </div>
-                    </div>
-
-                    <!-- Reporting Tool -->
-                    <div class="item">
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Reporting Tool</div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="hline-alt"></div>
-                        </div>
-                        <div class="d-flex item-padding" style="height: 105px;">
-                            <div class="item-content-info">
-                                <ul>
-                                    <li>unified data format</li>
-                                    <li>generate comparisons, graphs, tables all in the same program</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item" style="height:50px;">
-                        <div class="d-flex">
-                            <div class="vline"></div>
-                        </div>
-                    </div>
-
-                    <!-- Templating -->
-                    <div class="item">
-                        <div class="d-flex ">
-                            <div class="vline"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex item-padding">
-                            <div class="item-content">CornerTimes</div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="hline-alt"></div>
-                        </div>
-                        <div class="d-flex item-padding" style="height: 105px;">
-                            <div class="item-content-info">
-                                <ul>
-                                    <li>Customizable Gui</li>
-                                    <li>Use Existing Formats</li>
-                                    <li>Share Formats</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item" style="height:50px;">
-                        <div class="d-flex">
-                            <div class="vline"></div>
-                        </div>
-                    </div>
-
-                    <!-- Exports -->
-                    <div class="item">
-                        <div class="d-flex ">
-                            <div class="vline-bot"></div>
-                        </div>
-                        <div class="d-flex ">
-                            <div class="hline"></div>
-                        </div>
-                        <div class="d-flex item-padding">
-                            <div class="item-content">Exports</div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="hline-alt"></div>
-                        </div>
-                        <div class="d-flex item-padding" style="height: 55px;">
-                            <div class="item-content-info">
-                                <ul>
-                                    <li>csv, binary, text</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-md-4 my-3">
+                        <img class="img-fluid d-block mb-4" src="/resources/modules/customModule.png">
+                        <h5>
+                            <b>Custom Module</b>
+                        </h5>
+                        <p class="mt-1">Tell us what you need and we'll figure it out for you.</p>
                     </div>
                 </div>
             </div>
         </div>
 
 
+        <!-- Diagram -->
+        <div class="py-5 product-diagram bg-light text-dark">
+
+            <div class="container product-diagram">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="mb-4">Complete Diagram of RC Platform</h1>
+                    </div>
+                </div>
+                <div class="row scale">
+                    <!-- Left -->
+                    <div class="mycol">
+                        <!-- Left Header -->
+                        <div class="header">
+                            <div class="d-flex item-padding">
+                                <h3 class="header-content">Data Input</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Setup Data</div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="vline-top"></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Car Data</div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="d-flex item-padding">
+                                <div class="item-content">On-Track Data</div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Timing Data</div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Video Data</div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Simulation Data</div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="d-flex item-padding">
+                                <div class="item-content">On-Car Data</div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Telemetry</div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Supplier Data</div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Test Rig Data</div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="vline-bot"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Connector -->
+                    <div class="mycol">
+                        <div class="header-placeholder"></div>
+                        <div class="connector my-auto"></div>
+                    </div>
+                    <!-- Server -->
+                    <div class="mycol">
+                        <div class="header-placeholder"></div>
+                        <div class="server my-auto">Server</div>
+                    </div>
+                    <!-- Connector -->
+                    <div class="mycol">
+                        <div class="header-placeholder"></div>
+                        <div class="connector my-auto"></div>
+                    </div>
+                    <!-- Right -->
+                    <div class="mycol">
+                        <!-- Right Header -->
+                        <div class="header">
+                            <div class="d-flex item-padding">
+                                <h3 class="header-content-alt">Data Output</h3>
+                            </div>
+                        </div>
+                        <!-- Runsheet -->
+                        <div class="item">
+                            <div class="d-flex ">
+                                <div class="vline-top"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Runsheet</div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="hline-alt"></div>
+                            </div>
+                            <div class="d-flex item-padding" style="height: 180px;">
+                                <div class="item-content-info">
+                                    <ul>
+                                        <li>automatic timing import</li>
+                                        <li>automatic export of constants</li>
+                                        <li>multi user sharing</li>
+                                        <li>inputs from individual computers (tyres, crew chief)</li>
+                                        <li>publish data</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" style="height:120px;">
+                            <div class="d-flex">
+                                <div class="vline"></div>
+                            </div>
+                        </div>
+
+
+                        <!-- CornerTimes -->
+                        <div class="item">
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex item-padding">
+                                <div class="item-content">CornerTimes</div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="hline-alt"></div>
+                            </div>
+                            <div class="d-flex item-padding" style="height: 105px;">
+                                <div class="item-content-info">
+                                    <ul>
+                                        <li>fast driver analysis</li>
+                                        <li>direct link to vehicle data</li>
+                                        <li>direct link to video data</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" style="height:50px;">
+                            <div class="d-flex">
+                                <div class="vline"></div>
+                            </div>
+                        </div>
+
+                        <!-- Video Analyis -->
+                        <div class="item">
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Video Analysis</div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="hline-alt"></div>
+                            </div>
+                            <div class="d-flex item-padding" style="height: 105px;">
+                                <div class="item-content-info">
+                                    <ul>
+                                        <li>automatic video recognition</li>
+                                        <li>linked to CornerTimes</li>
+                                        <li>On-board video or TV stream</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" style="height:50px;">
+                            <div class="d-flex">
+                                <div class="vline"></div>
+                            </div>
+                        </div>
+
+                        <!-- Reporting Tool -->
+                        <div class="item">
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Reporting Tool</div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="hline-alt"></div>
+                            </div>
+                            <div class="d-flex item-padding" style="height: 105px;">
+                                <div class="item-content-info">
+                                    <ul>
+                                        <li>unified data format</li>
+                                        <li>generate comparisons, graphs, tables all in the same program</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" style="height:50px;">
+                            <div class="d-flex">
+                                <div class="vline"></div>
+                            </div>
+                        </div>
+
+                        <!-- Templating -->
+                        <div class="item">
+                            <div class="d-flex ">
+                                <div class="vline"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex item-padding">
+                                <div class="item-content">CornerTimes</div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="hline-alt"></div>
+                            </div>
+                            <div class="d-flex item-padding" style="height: 105px;">
+                                <div class="item-content-info">
+                                    <ul>
+                                        <li>Customizable Gui</li>
+                                        <li>Use Existing Formats</li>
+                                        <li>Share Formats</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" style="height:50px;">
+                            <div class="d-flex">
+                                <div class="vline"></div>
+                            </div>
+                        </div>
+
+                        <!-- Exports -->
+                        <div class="item">
+                            <div class="d-flex ">
+                                <div class="vline-bot"></div>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="hline"></div>
+                            </div>
+                            <div class="d-flex item-padding">
+                                <div class="item-content">Exports</div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="hline-alt"></div>
+                            </div>
+                            <div class="d-flex item-padding" style="height: 55px;">
+                                <div class="item-content-info">
+                                    <ul>
+                                        <li>csv, binary, text</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Diagram Ended-->
+
+
+        <!-- Contact -->
+        <div class="py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 text-center">
+                        <h1>Request A Demo</h1>
+                        <p class="text-center lead">Request a demo or to see how it can help you to improve your performance.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-7 mb-5">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="First name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Last name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Company name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email address">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control mt-5" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-second btn-lg float-right">Send</button>
+                                </form>
+                            </div>
+                            <div class="col-md-3 offset-md-1">
+                                <h5>
+                                    NextLevel Software GmbH
+                                </h5>
+                                <p>
+                                    Revalerstraße 33
+                                    <br> 89231
+                                    <br> Hamburg
+                                    <br>E-Mail:
+                                    <a href="mailto:future@nextlevel.de">future@nextlevel.de</a>
+                                    <br> Phone:
+                                    <a href="tel:+15555551212">555-555-1212</a>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         </div>
         </div>
 
