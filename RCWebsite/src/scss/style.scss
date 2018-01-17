@@ -1,10 +1,19 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
 // primary rgb: 33 147 243
 // alt-primary rgb: 233 80 15
 // material design darker organe #FF3D00
-$theme-colors: ( "primary": #2193f3, "alt-primary":#ff5722);
+$theme-colors: ( "primary": #2193f3, "alt-primary":#ff5722, "grey-alt":#F5F5F5, "grey-alt2":#444444);
+$carousel-indicator-active-bg: #ff5722;
+@import "../../node_modules/bootstrap/scss/bootstrap";
 .bg-primary-alt {
     background-color: theme-color("alt-primary") !important;
+}
+
+.bg-grey-alt {
+    background-color: theme-color("grey-alt") !important;
+}
+
+.bg-grey-alt2 {
+    background-color: theme-color("grey-alt2") !important;
 }
 
 html {
@@ -282,6 +291,10 @@ $shadow-color: #3f3f3f;
         line-height: 150px;
         text-align: center;
     }
+}
+
+.carousel ol li {
+    cursor: pointer;
 }
 
 .font-weight-400 {
