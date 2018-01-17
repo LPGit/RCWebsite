@@ -13,7 +13,7 @@ function showDevMessage() {
     //    $('#devMessageContent').append(tasks);
     // },'html');  
 
-    $('#devMessageModal').modal();
+    //$('#devMessageModal').modal();
 }
 
 

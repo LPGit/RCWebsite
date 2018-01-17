@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 0px;
     margin-bottom: 60px;
 }
@@ -32,9 +32,30 @@ body {
     /* background-image: url(../resources/BlueTileBg.jpg); */
     /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
     background-image: url(../resources/BlueJumbotron3.svg);
+    /*background-image: url(../resources/BlueTriangBg.jpg);*/
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.main-jumbotron2 {
+    margin-bottom: 0px;
+    /* background-image: url(../resources/BlueTileBg.jpg); */
+    /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
+    /* background-image: url(../resources/BlueJumbotron3.svg); */
+    background-image: url(../resources/BlueTriangBg.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-header {
+    @extend .h2;
+    margin-bottom: 0;
+}
+
+.sub-header {
+    max-width: 450px;
 }
 
 .jumbotron-orange {

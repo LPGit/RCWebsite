@@ -308,7 +308,7 @@ template {
   display: none !important; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .top-header, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
@@ -318,7 +318,7 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
   font-size: 2.5rem; }
 
-h2, .h2 {
+h2, .h2, .top-header {
   font-size: 2rem; }
 
 h3, .h3 {
@@ -6018,7 +6018,7 @@ html {
   min-height: 100%; }
 
 body {
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 0px;
   margin-bottom: 60px; }
 
@@ -6035,9 +6035,26 @@ body {
   /* background-image: url(../resources/BlueTileBg.jpg); */
   /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
   background-image: url(../resources/BlueJumbotron3.svg);
+  /*background-image: url(../resources/BlueTriangBg.jpg);*/
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat; }
+
+.main-jumbotron2 {
+  margin-bottom: 0px;
+  /* background-image: url(../resources/BlueTileBg.jpg); */
+  /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
+  /* background-image: url(../resources/BlueJumbotron3.svg); */
+  background-image: url(../resources/BlueTriangBg.jpg);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.top-header {
+  margin-bottom: 0; }
+
+.sub-header {
+  max-width: 450px; }
 
 .jumbotron-orange {
   margin-bottom: 0px;
