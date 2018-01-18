@@ -133,16 +133,17 @@ $shadow-color: #3f3f3f;
 
 /* Orange Button */
 
+$darkOrange:darken(theme-color("alt-primary"), 5%);
 .btn-second {
     color: #fff;
     background-color: theme-color("alt-primary");
-    border-color: darken(theme-color("alt-primary"), 10%);
+    border-color: $darkOrange;
 }
 
 .btn-second:hover {
     color: #fff;
-    background-color: darken(theme-color("alt-primary"), 10%);
-    border-color: darken(theme-color("alt-primary"), 10%);
+    background-color: $darkOrange;
+    border-color: $darkOrange;
 }
 
 .btn-second:focus,
@@ -152,16 +153,16 @@ $shadow-color: #3f3f3f;
 
 .btn-second.disabled,
 .btn-second:disabled {
-    background-color: darken(theme-color("alt-primary"), 10%);
-    border-color: darken(theme-color("alt-primary"), 10%);
+    background-color: $darkOrange;
+    border-color: $darkOrange;
 }
 
 .btn-second:not([disabled]):not(.disabled):active,
 .btn-second:not([disabled]):not(.disabled).active,
 .show>.btn-second.dropdown-toggle {
     color: #fff;
-    background-color: darken(theme-color("alt-primary"), 10%);
-    border-color: darken(theme-color("alt-primary"), 10%);
+    background-color: $darkOrange;
+    border-color: $darkOrange;
     box-shadow: 0 0 0 0.2rem rgba(theme-color("alt-primary"), 0.5);
 }
 

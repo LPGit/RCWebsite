@@ -6269,12 +6269,12 @@ body {
 .btn-second {
   color: #fff;
   background-color: #ff5722;
-  border-color: #ee3900; }
+  border-color: #ff4409; }
 
 .btn-second:hover {
   color: #fff;
-  background-color: #ee3900;
-  border-color: #ee3900; }
+  background-color: #ff4409;
+  border-color: #ff4409; }
 
 .btn-second:focus,
 .btn-second.focus {
@@ -6282,15 +6282,15 @@ body {
 
 .btn-second.disabled,
 .btn-second:disabled {
-  background-color: #ee3900;
-  border-color: #ee3900; }
+  background-color: #ff4409;
+  border-color: #ff4409; }
 
 .btn-second:not([disabled]):not(.disabled):active,
 .btn-second:not([disabled]):not(.disabled).active,
 .show > .btn-second.dropdown-toggle {
   color: #fff;
-  background-color: #ee3900;
-  border-color: #ee3900;
+  background-color: #ff4409;
+  border-color: #ff4409;
   box-shadow: 0 0 0 0.2rem rgba(255, 87, 34, 0.5); }
 
 .dotted {
