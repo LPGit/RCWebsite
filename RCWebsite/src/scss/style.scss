@@ -3,6 +3,7 @@
 // material design darker organe #FF3D00
 $theme-colors: ( "primary": #2193f3, "alt-primary":#ff5722, "grey-alt":#F5F5F5, "grey-alt2":#444444);
 $carousel-indicator-active-bg: #ff5722;
+$enable-rounded: false;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 .bg-primary-alt {
     background-color: theme-color("alt-primary") !important;
@@ -14,6 +15,11 @@ $carousel-indicator-active-bg: #ff5722;
 
 .bg-grey-alt2 {
     background-color: theme-color("grey-alt2") !important;
+}
+
+$primary-light:lighten(theme-color("primary"), 5%);
+.bg-primary-light {
+    background-color: $primary-light !important;
 }
 
 html {
