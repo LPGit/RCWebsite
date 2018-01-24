@@ -9,6 +9,14 @@ $theme-colors: ( "primary": #2193f3, "alt-primary":#ff5722, "grey-alt":#F5F5F5, 
 $carousel-indicator-active-bg: #ff5722;
 $enable-rounded: false;
 @import "../../node_modules/bootstrap/scss/bootstrap";
+.svg-color {
+    color: #6e6e6e; //110 110 110
+}
+
+.svg-primary {
+    color: theme-color("primary");
+}
+
 .bg-primary-alt {
     background-color: theme-color("alt-primary") !important;
 }
@@ -32,9 +40,8 @@ html {
 }
 
 body {
-    padding-top: 80px;
-    // padding-bottom: 0px;
-    // margin-bottom: 60px;
+    padding-top: 80px; // padding-bottom: 0px;
+     margin-bottom: 50px;
 }
 
 .footer {
@@ -173,7 +180,7 @@ $darkOrange:darken(theme-color("alt-primary"), 5%);
 
 /* div plus sign */
 
-.div-plus::after {
+.div-next::after {
     content: url("/resources/div-chevron-icon.png");
     width: 100px;
     height: 100px;
@@ -181,7 +188,31 @@ $darkOrange:darken(theme-color("alt-primary"), 5%);
     top: 50px;
     z-index: 1;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -50px;
+}
+
+.div-plus::after {
+    content: url("/resources/div-plus-icon.png");
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    z-index: 1;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.vertical-line {
+    content: "";
+    position: relative;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    border-left: 2px dotted;
+    color: #6e6e6e;
 }
 
 
@@ -194,7 +225,7 @@ $darkOrange:darken(theme-color("alt-primary"), 5%);
     $hlineLength: 35px;
     $grey: #555;
     $lightGrey: #888;
-    $scale: 0.9;
+    $scale: 1;
     .scale {
         -ms-transform: scale($scale, $scale);
         /* IE 9 */

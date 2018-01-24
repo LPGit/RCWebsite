@@ -6169,6 +6169,12 @@ a.text-grey-alt2:focus, a.text-grey-alt2:hover {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+.svg-color {
+  color: #6e6e6e; }
+
+.svg-primary {
+  color: #2193f3; }
+
 .bg-primary-alt {
   background-color: #ff5722 !important; }
 
@@ -6186,7 +6192,8 @@ html {
   min-height: 100%; }
 
 body {
-  padding-top: 80px; }
+  padding-top: 80px;
+  margin-bottom: 50px; }
 
 .footer {
   position: absolute;
@@ -6293,7 +6300,7 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(255, 87, 34, 0.5); }
 
 /* div plus sign */
-.div-plus::after {
+.div-next::after {
   content: url("/resources/div-chevron-icon.png");
   width: 100px;
   height: 100px;
@@ -6301,15 +6308,37 @@ body {
   top: 50px;
   z-index: 1;
   left: 50%;
-  margin-left: -100px; }
+  margin-left: -50px; }
+
+.div-plus::after {
+  content: url("/resources/div-plus-icon.png");
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 50px;
+  z-index: 1;
+  left: 50%;
+  margin-left: -50px; }
+
+.vertical-line {
+  content: "";
+  position: relative;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  border-left: 2px dotted;
+  color: #6e6e6e; }
 
 /* large product diagram */
 .product-diagram .scale {
-  -ms-transform: scale(0.9, 0.9);
+  -ms-transform: scale(1, 1);
   /* IE 9 */
-  -webkit-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(1, 1);
   /* Safari */
-  transform: scale(0.9, 0.9); }
+  transform: scale(1, 1); }
 
 .product-diagram .mycol {
   display: flex;
