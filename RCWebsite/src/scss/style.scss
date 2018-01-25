@@ -3,9 +3,9 @@
 }
 
 // primary rgb: 33 147 243
-// alt-primary rgb: 233 80 15
+// primary-alt rgb: 233 80 15
 // material design darker organe #FF3D00
-$theme-colors: ( "primary": #2193f3, "alt-primary":#ff5722, "grey-alt":#F5F5F5, "grey-alt2":#444444);
+$theme-colors: ( "primary": #2193f3, "primary-alt":#ff5722, "grey-alt":#F5F5F5, "grey-alt2":#444444);
 $carousel-indicator-active-bg: #ff5722;
 $enable-rounded: false;
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -17,8 +17,16 @@ $enable-rounded: false;
     color: theme-color("primary");
 }
 
+.svg-primary-alt {
+    color: theme-color("primary-alt");
+}
+
 .bg-primary-alt {
-    background-color: theme-color("alt-primary") !important;
+    background-color: theme-color("primary-alt") !important;
+}
+
+.text-primary-alt {
+    color: theme-color("primary-alt");
 }
 
 .bg-grey-alt {
@@ -41,7 +49,7 @@ html {
 
 body {
     padding-top: 80px; // padding-bottom: 0px;
-     margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .footer {
@@ -144,10 +152,10 @@ $shadow-color: #3f3f3f;
 
 /* Orange Button */
 
-$darkOrange:darken(theme-color("alt-primary"), 5%);
+$darkOrange:darken(theme-color("primary-alt"), 5%);
 .btn-second {
     color: #fff;
-    background-color: theme-color("alt-primary");
+    background-color: theme-color("primary-alt");
     border-color: $darkOrange;
 }
 
@@ -159,7 +167,7 @@ $darkOrange:darken(theme-color("alt-primary"), 5%);
 
 .btn-second:focus,
 .btn-second.focus {
-    box-shadow: 0 0 0 0.2rem rgba(theme-color("alt-primary"), 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(theme-color("primary-alt"), 0.5);
 }
 
 .btn-second.disabled,
@@ -174,7 +182,7 @@ $darkOrange:darken(theme-color("alt-primary"), 5%);
     color: #fff;
     background-color: $darkOrange;
     border-color: $darkOrange;
-    box-shadow: 0 0 0 0.2rem rgba(theme-color("alt-primary"), 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(theme-color("primary-alt"), 0.5);
 }
 
 
@@ -246,8 +254,8 @@ $darkOrange:darken(theme-color("alt-primary"), 5%);
         height: $itemHeight + 10px;
     }
     .header-content {
-        border: 2px solid theme-color("alt-primary");
-        background: theme-color("alt-primary");
+        border: 2px solid theme-color("primary-alt");
+        background: theme-color("primary-alt");
         color: #fff;
         width: $itemWidth;
         padding: 5px;
@@ -269,7 +277,7 @@ $darkOrange:darken(theme-color("alt-primary"), 5%);
     }
     .item-content {
         width: $itemWidth;
-        border: 2px solid theme-color("alt-primary");
+        border: 2px solid theme-color("primary-alt");
         height: $itemHeight - 2*$itemPadding;
         padding: 5px;
         text-align: center;
@@ -320,7 +328,7 @@ $darkOrange:darken(theme-color("alt-primary"), 5%);
     }
     .server {
         border-radius: 25px;
-        border: 2px solid theme-color("alt-primary");
+        border: 2px solid theme-color("primary-alt");
         background: theme-color("primary");
         width: 180px;
         height: 150px;
@@ -347,4 +355,9 @@ $darkOrange:darken(theme-color("alt-primary"), 5%);
 
 .font-weight-700 {
     font-weight: 700;
+}
+
+#runsheet-benefits .fa-plus {
+    font-size: 1.5em;
+    color: theme-color("primary");
 }
