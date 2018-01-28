@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="15.911642mm"
+   height="13.7021mm"
+   viewBox="0 0 15.911642 13.7021"
+   version="1.1"
+   id="svg981"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="input-icon.svg">
+  <defs
+     id="defs975" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3"
+     inkscape:cx="-74.855629"
+     inkscape:cy="35.606882"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata978">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-91.829888,-132.91085)">
+    <path
+       style="fill:#6e6e6e;fill-opacity:1;stroke:none;stroke-width:0.74241191;stroke-opacity:1"
+       inkscape:connector-curvature="0"
+       d="M 106.29502,132.91085 H 93.276401 c -0.795583,0 -1.446513,0.68587 -1.446513,1.52415 v 3.04068 h 1.446513 v -3.05592 h 13.018619 v 10.69191 H 93.276401 v -3.06354 h -1.446513 v 3.05592 c 0,0.83828 0.65093,1.5089 1.446513,1.5089 h 13.018619 c 0.79558,0 1.44651,-0.67062 1.44651,-1.5089 V 134.435 c 0,-0.8459 -0.65093,-1.52415 -1.44651,-1.52415 z m -7.232567,9.89935 2.893027,-3.0483 -2.893027,-3.04829 v 2.28622 h -7.232565 v 1.52415 h 7.232565 z"
+       id="path842" />
+  </g>
+</svg>
