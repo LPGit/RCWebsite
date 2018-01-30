@@ -15,7 +15,7 @@
    version="1.1"
    id="svg1374"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="BlueJumbotron2.svg">
+   sodipodi:docname="BlueJumbotron.svg">
   <defs
      id="defs1368" />
   <sodipodi:namedview
@@ -76,6 +76,11 @@
        style="fill:#053a67;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.19607843"
        d="M 258.2333,149.09792 -14.552084,117.87708 v 31.22084 z"
        id="path3938"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#053a67;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.19607843"
+       d="M -14.552084,117.87708 258.2333,76.337502 H -14.552084 Z"
+       id="path3944"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

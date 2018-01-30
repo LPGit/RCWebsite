@@ -6211,18 +6211,15 @@ body {
   margin-bottom: 0px;
   /* background-image: url(../resources/BlueTileBg.jpg); */
   /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
-  background-image: url(../resources/BlueJumbotron3.svg);
+  background-image: url(../resources/BlueJumbotron.svg);
   /*background-image: url(../resources/BlueTriangBg.jpg);*/
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat; }
 
-.main-jumbotron2 {
+.main-jumbotron4 {
   margin-bottom: 0px;
-  /* background-image: url(../resources/BlueTileBg.jpg); */
-  /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
-  /* background-image: url(../resources/BlueJumbotron3.svg); */
-  background-image: url(../resources/BlueTriangBg.jpg);
+  background-image: url(../resources/BlueJumbotron4.svg);
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat; }
