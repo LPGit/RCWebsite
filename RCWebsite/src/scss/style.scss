@@ -281,6 +281,9 @@ $darkOrange:darken(theme-color("primary-alt"), 5%);
         vertical-align: middle;
         line-height: $itemHeight - 2*$itemPadding - 10px;
     }
+    #right-side .item-content {
+        border: 2px solid theme-color("primary");
+    }
     .item-padding {
         padding-top: $itemPadding;
         padding-bottom: $itemPadding;

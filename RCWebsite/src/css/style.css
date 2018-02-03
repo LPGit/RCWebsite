@@ -6385,6 +6385,9 @@ body {
   vertical-align: middle;
   line-height: 35px; }
 
+.product-diagram #right-side .item-content {
+  border: 2px solid #2193f3; }
+
 .product-diagram .item-padding {
   padding-top: 10px;
   padding-bottom: 10px; }
