@@ -3,10 +3,10 @@
 }
 
 // primary rgb: 33 147 243
-// primary-alt rgb: 233 80 15
+// primary-alt rgb: new #ff7B22 (old: 233 80 15 #ff5722)
 // material design darker organe #FF3D00
-$theme-colors: ( "primary": #2193f3, "primary-alt":#ff5722, "grey-alt":#F5F5F5, "grey-alt2":#444444);
-$carousel-indicator-active-bg: #ff5722;
+$theme-colors: ( "primary": #2193f3, "primary-alt":#ff7B22, "grey-alt":#F5F5F5, "grey-alt2":#444444);
+$carousel-indicator-active-bg: #ff7B22;
 $enable-rounded: false;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 .svg-color {
