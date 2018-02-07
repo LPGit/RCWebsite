@@ -275,7 +275,7 @@
 
         <div class="row">
           <div class="col-md-6 offset-md-3 p-5 bg-primary">
-            <form action="https://formspree.io/veryunknownuser@web.de" method="POST">
+            <form id="contactForm" action="https://api.formbucket.com/f/buk_5K320HjnbrFnUZvt4vGMrp2N">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <input type="text" name="First Name" class="form-control" placeholder="First name">
@@ -286,7 +286,7 @@
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <input type="email" name="_replyto" class="form-control" placeholder="Email address" required>
+                  <input type="email" name="email" class="form-control" placeholder="Email address" required>
                 </div>
                 <div class="form-group col-md-6">
                   <input type="tel" name="Telephone" class="form-control" placeholder="Phone number">
@@ -294,10 +294,9 @@
               </div>
               <div class="form-group">
                 <input type="text" name="Conpany Name" class="form-control" placeholder="Company name">
-              </div>
-              <input type="hidden" name="_next" value="/company.html" />
+              </div>              
               <div class="form-group">
-                <textarea type="text" name="Message" class="form-control mt-5" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your message"></textarea>
+                <textarea type="text" name="message" class="form-control mt-5" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your message"></textarea>
               </div>
               <input type="submit" value="Send" class="btn btn-second btn-lg float-right">
             </form>
@@ -346,7 +345,7 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
-  <script src="js/startup.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>
