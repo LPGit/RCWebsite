@@ -2,35 +2,31 @@ $(function () {
     $('#contactForm').submit(function (event) {
         event.preventDefault();
 
-        var subscribeForm = $(this);
-        var subscribeButton = $('input[type=submit]', subscribeForm);
+        var postUrl = "https://api.formbucket.com/f/buk_5K320HjnbrFnUZvt4vGMrp2N";
 
-        //   if ($("input[name='email']").val() === '') {
-        //     alert('Please enter an email address')
-        //     return
-        //   }
+        var contactForm = $(this);
+        var submitButton = $('input[type=submit]', contactForm);
 
         $.ajax({
-            url: subscribeForm.prop('action'),
+            url: postUrl,
             type: 'POST',
             crossDomain: true,
             headers: {
                 'accept': 'application/javascript',
             },
-            data: $('#contactForm').serialize(),
+            data: contactForm.serialize(),
             beforeSend: function () {
-                subscribeButton.prop('disabled', 'disabled');
+                submitButton.prop('disabled', true);
             }
         })
             .done(function (response) {
-                // You will do something WAY BETTER than alert
-                // because you are an awesome designer.
-                alert('Thanks for subscribing!');
-                subscribeButton.prop('disabled', false);
+                $("#successAlert").slideToggle().delay(7000).slideToggle();
+                submitButton.prop('disabled', false);
+                contactForm[0].reset();
             })
             .fail(function (response) {
-                alert('Dang, something went wrong!');
-                subscribeButton.prop('disabled', false);
+                $("#failAlert").slideToggle().delay(7000).slideToggle();
+                submitButton.prop('disabled', false);
             })
 
     });

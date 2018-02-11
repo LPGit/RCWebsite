@@ -275,7 +275,7 @@
 
         <div class="row">
           <div class="col-md-6 offset-md-3 p-5 bg-primary">
-            <form id="contactForm" action="https://api.formbucket.com/f/buk_5K320HjnbrFnUZvt4vGMrp2N">
+            <form id="contactForm">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <input type="text" name="First Name" class="form-control" placeholder="First name">
@@ -286,17 +286,18 @@
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <input type="email" name="email" class="form-control" placeholder="Email address" required>
+                  <input type="email" name="Email" class="form-control" placeholder="Email address*" required>
                 </div>
                 <div class="form-group col-md-6">
                   <input type="tel" name="Telephone" class="form-control" placeholder="Phone number">
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" name="Conpany Name" class="form-control" placeholder="Company name">
-              </div>              
+                <input type="text" name="Company Name" class="form-control" placeholder="Company name">
+              </div>
               <div class="form-group">
-                <textarea type="text" name="message" class="form-control mt-5" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your message"></textarea>
+                <textarea type="text" name="Message" class="form-control mt-5" rows="5" placeholder="Enter your message*"
+                  required></textarea>
               </div>
               <input type="submit" value="Send" class="btn btn-second btn-lg float-right">
             </form>
@@ -306,23 +307,21 @@
 
     </div>
 
-    <!-- Newsletter Signup -->
-    <!-- <div class="py-5 bg-dark text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <p class="lead">Sign up to our newsletter for the latest news</p>
-            <form class="form-inline">
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Your e-mail here"> </div>
-              <button type="submit" class="btn btn-primary ml-3">Subscribe</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
   </main>
+
+  <div id="successAlert" class="alert alert-success alert-fixed" role="alert">
+    <div class="alert-content">
+      <h4 class="alert-heading">Thanks.</h4>
+      <p>Your message has been successfully sent. We'll be in touch with you soon.</p>
+    </div>
+  </div>
+
+  <div id="failAlert" class="alert alert-danger alert-fixed" role="alert">
+    <div class="container justify-content-center">
+      <h4 class="alert-heading">Sorry!</h4>
+      <p>Sorry, something went wrong. Please fill out the email and message fields and try again.</p>
+    </div>
+  </div>
 
   <footer class="footer bg-dark text-muted">
     <div class="container-fluid text-right py-2">
@@ -337,9 +336,9 @@
     ================================================== -->
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
     crossorigin="anonymous"></script>

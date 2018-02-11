@@ -6207,6 +6207,22 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */ }
 
+.alert-fixed {
+  position: fixed;
+  bottom: 0px;
+  border-bottom: 0px;
+  margin-bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9999;
+  border-radius: 0px;
+  display: none;
+  text-align: center; }
+
+.alert-content {
+  display: inline-block;
+  text-align: left; }
+
 .main-jumbotron {
   margin-bottom: 0px;
   /* background-image: url(../resources/BlueTileBg.jpg); */
