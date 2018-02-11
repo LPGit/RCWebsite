@@ -6352,8 +6352,14 @@ body {
   color: #6e6e6e; }
 
 @media (min-width: 768px) {
-  .left-border {
-    border-left: 2px dotted; } }
+  .left-border:after {
+    content: "";
+    border-left: 2px dotted;
+    position: absolute;
+    bottom: 3rem;
+    top: 3rem;
+    left: 0;
+    width: 2px; } }
 
 /* large product diagram */
 .product-diagram .scale {

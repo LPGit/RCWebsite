@@ -239,8 +239,17 @@ $darkOrange:darken(theme-color("primary-alt"), 5%);
 }
 
 @include media-breakpoint-up(md) {
-    .left-border {
+    // .left-border {
+    //     //border-left: 2px dotted;
+    // }
+    .left-border:after {
+        content: ""; //background: rgb(255, 255, 255); 
         border-left: 2px dotted;
+        position: absolute;
+        bottom: 3rem;
+        top: 3rem;
+        left: 0; //height: 100%; 
+        width: 2px;
     }
 }
 
