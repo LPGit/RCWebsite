@@ -6351,6 +6351,10 @@ body {
   border-left: 2px dotted;
   color: #6e6e6e; }
 
+@media (min-width: 768px) {
+  .left-border {
+    border-left: 2px dotted; } }
+
 /* large product diagram */
 .product-diagram .scale {
   -ms-transform: scale(1, 1);
