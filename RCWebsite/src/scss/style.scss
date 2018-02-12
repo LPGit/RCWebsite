@@ -79,15 +79,36 @@ body {
     text-align: left;
 }
 
+// .blend-car {
+//     position: relative;
+//     top: 15%;
+//     left: 55%;
+//     height: 350px;
+//     mix-blend-mode: multiply;
+// }
+
 .main-jumbotron {
     margin-bottom: 0px;
-    /* background-image: url(../resources/BlueTileBg.jpg); */
     /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
-    background-image: url(../resources/BlueJumbotron.svg);
-    /*background-image: url(../resources/BlueTriangBg.jpg);*/
+    // background-image: url(../resources/BlueJumbotron.svg);
+    background-image: url('../resources/BlueJumbotron.svg');
+    background-blend-mode: multiply;
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@include media-breakpoint-up(lg) {
+    .main-jumbotron {
+        margin-bottom: 0px;
+        /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
+        // background-image: url(../resources/BlueJumbotron.svg);
+        background-image: url('../resources/BlueJumbotron.svg'), url('../resources/generic racecar.png');
+        background-blend-mode: multiply;
+        background-position: 0% 25%, 90% 5%;
+        background-size: cover, 650px;
+        background-repeat: no-repeat;
+    }
 }
 
 .main-jumbotron4 {
@@ -167,7 +188,8 @@ $shadow-color: #3f3f3f;
 
 /* Orange Button */
 
-$darkOrange:darken(theme-color("primary-alt"), 5%);
+$darkOrange:darken(theme-color("primary-alt"),
+5%);
 .btn-second {
     color: #fff;
     background-color: theme-color("primary-alt");

@@ -6225,13 +6225,22 @@ body {
 
 .main-jumbotron {
   margin-bottom: 0px;
-  /* background-image: url(../resources/BlueTileBg.jpg); */
   /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
-  background-image: url(../resources/BlueJumbotron.svg);
-  /*background-image: url(../resources/BlueTriangBg.jpg);*/
+  background-image: url("../resources/BlueJumbotron.svg");
+  background-blend-mode: multiply;
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat; }
+
+@media (min-width: 992px) {
+  .main-jumbotron {
+    margin-bottom: 0px;
+    /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
+    background-image: url("../resources/BlueJumbotron.svg"), url("../resources/generic racecar.png");
+    background-blend-mode: multiply;
+    background-position: 0% 25%, 90% 5%;
+    background-size: cover, 650px;
+    background-repeat: no-repeat; } }
 
 .main-jumbotron4 {
   margin-bottom: 0px;
