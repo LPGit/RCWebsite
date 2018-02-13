@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width" />
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>ZURBemails</title>
+    <title>RC Platform</title>
 
     <style>
         * {
@@ -16,6 +16,14 @@
 
         * {
             font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        }
+
+        .mt-5 {
+            margin-top: 3rem;
+        }
+
+        .p-5 {
+            padding: 3rem;
         }
 
         img {
@@ -32,6 +40,7 @@
             -webkit-text-size-adjust: none;
             width: 100%!important;
             height: 100%;
+            color: #343A40;
         }
 
 
@@ -40,7 +49,7 @@
         ------------------------------------- */
 
         a {
-            color: #2BA6CB;
+            color: #1E88E4;
         }
 
         .btn {
@@ -53,6 +62,18 @@
             text-align: center;
             cursor: pointer;
             display: inline-block;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
         }
 
         p.callout {
@@ -68,7 +89,7 @@
 
         table.social {
             /* 	padding:15px; */
-            background-color: #ebebeb;
+            background-color: #CCCCCC;
 
         }
 
@@ -165,7 +186,7 @@
             font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
             line-height: 1.1;
             margin-bottom: 15px;
-            color: #000;
+            color: #343A40;
         }
 
         h1 small,
@@ -380,19 +401,24 @@
 <body bgcolor="#FFFFFF">
 
     <!-- HEADER -->
-    <table class="head-wrap" bgcolor="#999999">
+    <table class="head-wrap" bgcolor="#CCCCCC">
         <tr>
             <td></td>
             <td class="header container">
 
                 <div class="content">
-                    <table bgcolor="#999999">
+                    <table bgcolor="#CCCCCC">
                         <tr>
                             <td>
-                                <img src="http://placehold.it/200x50/" />
+                                <a href="http://www.rcplatform.net/">
+                                    <img src="https://rcwebsitedemo.azurewebsites.net/email/RCPlatformLogo.png" />
+                                    <!-- <img src="data:image/png;base64,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"/>
+                                     -->
+                                    
+                                </a>
                             </td>
                             <td align="right">
-                                <h6 class="collapse">Basic</h6>
+                                <!-- <h6 class="collapse">Basic</h6> -->
                             </td>
                         </tr>
                     </table>
@@ -415,31 +441,47 @@
                     <table>
                         <tr>
                             <td>
-                                <h3>Hi, Elijah Baily</h3>
-                                <p class="lead">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra
-                                    vitae.
+                                <h3>Hi,
+                                    <br> Laurent</h3>
+                                <p>Bin mir nicht sicher ob mein Vater schon mit dir darüber gesprochen hat. Wir haben software
+                                    entwickelt um die Datenanalyse zu vereinfachen. Wurde in Teilen auch in den letzten Saisons
+                                    bei Team Rosberg benutzt und wird auch diese Saison bei DTM und GT benutzt werden. Phoenix
+                                    hat ja ein ziemlich ähnliches setup wie TR. DTM mit Wintax daten und GT mit Darab6 oder
+                                    Darab7 daten. Verschiedene Zeitnahme systeme in den Serien... Die software is mit allen
+                                    formaten kompatibel und kann auf neue formate erweitert werden. Denke könnte deswegen
+                                    auch für euch interessant sein. Schaus die am besten mal an unter
+                                    <a href="http://www.rcplatform.net/">
+                                        <nobr>RC Platform</nobr>
+                                    </a>
+                                    Ich meld mich dann in paar Tagen bei dir falls du interessiert bist. Cornertimes..
                                 </p>
-                                <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra
-                                    vitae. consequat vel lacus. Sed iaculis pulvinar ligula, ornare fringilla ante viverra
-                                    et. In hac habitasse platea dictumst. Donec vel orci mi, eu congue justo. Integer eget
-                                    odio est, eget malesuada lorem. Aenean sed tellus dui, vitae viverra risus. Nullam massa
-                                    sapien, pulvinar eleifend fringilla id, convallis eget nisi. Mauris a sagittis dui. Pellentesque
-                                    non lacinia mi. Fusce sit amet libero sit amet erat venenatis sollicitudin vitae vel
-                                    eros. Cras nunc sapien, interdum sit amet porttitor ut, congue quis urna.</p>
+
+                                <p>
+                                    Mit freundlichen Grüßen
+                                    <br> Gabriel Baumgärtner
+                                </p>
                                 <!-- Callout Panel -->
-                                <p class="callout">
-                                    Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.
-                                    <a href="#">Click it! &raquo;</a>
-                                </p>
+                                <div class="mt-5" style="background:#1E88E4; color:#FFFFFF;padding-top:1rem;padding-bottom:0.5rem;">
+
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Visit our website to learn more about RC Platform
+                                        <!-- </p>
+                                    <p class="text-right"> -->
+                                        <a class="btn" style="background:#FF7B22; color:#FFFFFF; margin-left:2rem;" href="http://www.rcplatform.net/">
+                                            <nobr>RC Platform &raquo;</nobr>
+                                        </a>
+                                    </p>
+
+                                </div>
                                 <!-- /Callout Panel -->
 
                                 <!-- social & contact -->
-                                <table class="social" width="100%">
+                                <table class="social mt-5" width="100%">
                                     <tr>
                                         <td>
 
                                             <!-- column 1 -->
-                                            <table align="left" class="column">
+                                            <!-- <table align="left" class="column">
                                                 <tr>
                                                     <td>
 
@@ -453,25 +495,27 @@
 
                                                     </td>
                                                 </tr>
-                                            </table>
+                                            </table> -->
                                             <!-- /column 1 -->
 
                                             <!-- column 2 -->
                                             <table align="left" class="column">
                                                 <tr>
                                                     <td>
-
-                                                        <h5 class="">Contact Info:</h5>
-                                                        <p>Phone:
-                                                            <strong>408.341.0600</strong>
-                                                            <br/> Email:
-                                                            <strong>
-                                                                <a href="emailto:hseldon@trantor.com">hseldon@trantor.com</a>
-                                                            </strong>
-                                                        </p>
+                                                        <h5>Contact Info:</h5>
+                                                        <div>
+                                                            <strong>Call &emsp; </strong>
+                                                            <a href="tel:+4915168156011">+49-151-68156011</a>
+                                                            <p>Gabriel Baumgärtner, Director</p>
+                                                        </div>
+                                                        <div>
+                                                            <strong>Email &thinsp;</strong>
+                                                            <a href="mailto:gab@rcplatform.net">Gab@RCPlatform.net</a>
+                                                        </div>
 
                                                     </td>
                                                 </tr>
+
                                             </table>
                                             <!-- /column 2 -->
 
@@ -495,12 +539,11 @@
     <!-- /BODY -->
 
     <!-- FOOTER -->
-    <table class="footer-wrap">
+    <!-- <table class="footer-wrap">
         <tr>
             <td></td>
             <td class="container">
 
-                <!-- content -->
                 <div class="content">
                     <table>
                         <tr>
@@ -516,12 +559,11 @@
                         </tr>
                     </table>
                 </div>
-                <!-- /content -->
 
             </td>
             <td></td>
         </tr>
-    </table>
+    </table> -->
     <!-- /FOOTER -->
 
 </body>

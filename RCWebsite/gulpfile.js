@@ -30,6 +30,7 @@ gulp.task('serve', ['sass'], function() {
         gulp.watch(['src/scss/*.scss'], ['sass']);
         gulp.watch(['src/js/*.js']).on('change', browserSync.reload);;
         gulp.watch("src/modules/*.html").on('change', browserSync.reload);
+        gulp.watch("src/email/*.html").on('change', browserSync.reload);
         gulp.watch("src/*.html").on('change', browserSync.reload);
     });    
 
