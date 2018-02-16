@@ -6242,6 +6242,10 @@ body {
     background-size: cover, 650px;
     background-repeat: no-repeat; } }
 
+@media (max-width: 1199.99px) {
+  .main-jumbotron .display-3 {
+    font-size: 3.5rem !important; } }
+
 .main-jumbotron4 {
   margin-bottom: 0px;
   background-image: url(../resources/BlueJumbotron4.svg);

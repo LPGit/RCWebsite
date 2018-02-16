@@ -86,7 +86,6 @@ body {
 //     height: 350px;
 //     mix-blend-mode: multiply;
 // }
-
 .main-jumbotron {
     margin-bottom: 0px;
     /*background: linear-gradient(to bottom,  darken(theme-color("primary"), 25%), theme-color("primary"));*/
@@ -108,6 +107,12 @@ body {
         background-position: 0% 25%, 90% 5%;
         background-size: cover, 650px;
         background-repeat: no-repeat;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .main-jumbotron .display-3 {
+        font-size: 3.5rem !important;
     }
 }
 
