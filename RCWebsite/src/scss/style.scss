@@ -110,9 +110,12 @@ body {
     }
 }
 
-@include media-breakpoint-down(lg) {
-    .main-jumbotron .display-3 {
-        font-size: 3.5rem !important;
+@include media-breakpoint-down(md) {
+    .jumbotron,
+    .jumbo-fluid {
+        .display-3 {
+            font-size: 2.5rem !important;
+        }
     }
 }
 
