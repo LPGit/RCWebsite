@@ -6501,3 +6501,10 @@ body {
 #platform-benefits .fa-plus {
   font-size: 1.5em;
   color: #ff7B22; }
+
+.modal-large {
+  display: table;
+  top: 1rem;
+  width: auto !important;
+  margin: auto !important;
+  max-width: 80%; }

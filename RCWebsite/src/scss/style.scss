@@ -429,3 +429,12 @@ $darkOrange:darken(theme-color("primary-alt"),
     font-size: 1.5em;
     color: theme-color("primary-alt");
 }
+
+.modal-large {
+    display: table;
+    top: 0.5rem * 2;
+    width: auto !important;
+    margin: auto !important;
+    max-width: 80%;
+}
+
