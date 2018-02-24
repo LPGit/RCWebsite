@@ -438,3 +438,6 @@ $darkOrange:darken(theme-color("primary-alt"),
     max-width: 80%;
 }
 
+.chrome-blur-fix {
+    image-rendering: -webkit-optimize-contrast;
+}

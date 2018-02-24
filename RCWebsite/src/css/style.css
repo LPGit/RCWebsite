@@ -6508,3 +6508,6 @@ body {
   width: auto !important;
   margin: auto !important;
   max-width: 80%; }
+
+.chrome-blur-fix {
+  image-rendering: -webkit-optimize-contrast; }
