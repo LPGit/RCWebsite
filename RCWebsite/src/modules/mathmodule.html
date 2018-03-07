@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>Math Module - RC Platform</title>
+
+    <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
+        <div class="container">
+            <!-- Icon -->
+            <a class="navbar-brand" href="/">
+                <img alt="RC" src="/resources/RCLogo.svg" height="40" class="d-sm-none">
+                <img alt="RC" src="/resources/RCPlatformLogo.svg" height="40" class="d-none d-sm-block">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse flex-column-reverse align-items-end" id="navbarsExampleDefault">
+
+                <!-- Bottom Links -->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link-large" href="/">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-large ml-3" href="/platform.html">RC Platform</a>
+                    </li>
+                    <li class="nav-item dropdown active-primary">
+                        <a class="nav-link-large dropdown-toggle" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RC Modules</a>
+                        <div class="dropdown-menu" style="margin-top:0;" aria-labelledby="dropdown01">
+                            <a class="dropdown-item " href="/modules/cornertimes.html">CornerTimes</a>
+                            <a class="dropdown-item active" href="/modules/mathmodule.html">Math</a>
+                            <a class="dropdown-item" href="/modules/reporting.html">Reporting</a>
+                            <a class="dropdown-item" href="/modules/runsheet.html">Runsheet</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link-large ml-3" href="/contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link-large" href="/company.html">Company</a>
+                    </li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="jumbo-fluid bg-primary py-5 text-white">
+            <div class="container">
+                <h1 class="display-3 font-weight-500">Math Module</h1>
+            </div>
+
+        </div>
+
+        <!-- Introduction  -->
+        <div class="bg-grey-alt2">
+            <div class="pt-5 text-light">
+                <div class="container">
+                    <div class="row py-4">
+
+                        <div class="col align-self-center text-left">
+                            <h2 class="text-primary">Develop Numerical Models in RC Platform</h2>
+                            <p>
+                                The RC Platform provides a powerful module to develop new mathematical formulas or perform other numerical calculations on
+                                your data.
+                            </p>
+                            <p>
+                                The module lets you leverage any data that was collected by RC Platform. To make this as easy as possible we developed a
+                                new syntax in that you write your formulas. Together with RC's data plotting featuers this
+                                gives you the ability to quickly test and evaluate new ideas.
+
+                            </p>
+                            <p>
+                                And if your new ideas evolve into something bigger exporting the results for other applications or embedding them into RC
+                                reports is alawys an option.
+                            </p>
+                        </div>
+                        <div class="col align-self-center text-center mt-5">
+                            <img class="img-fluid d-block" alt="Xaml Report" src="/resources/mathmodule/Collage.png">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <!--Cotnainer End-->
+
+        <!-- Step 1 -->
+        <div class="">
+            <div class="container text-dark pt-3 pb-5">
+                <div class="row">
+                    <div class="col align-self-center text-center mt-5">
+                        <a href="#" data-toggle="modal" data-target="#templateModal">
+                            <img class="img-fluid d-block" alt="Template" src="/resources/reporting/Template_mid.png">
+                        </a>
+                    </div>
+                    <div class="col align-self-center text-left">
+                        <h5 class="text-primary">Syntax</h5>
+                        <h2>Easy to Read and Write Syntax</h2>
+                        <p class="mt-4">
+                            fluid syntax
+                            channel as vector
+                            channel add multiply operators on channels
+                            functional 
+                            declarative
+                        </p>
+                        <p>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="templateModal" tabindex="-1" role="dialog" aria-labelledby="templateModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-large" data-dismiss="modal" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div>
+                            <img class="img-fluid mx-auto d-block" alt="Template Large" src="/resources/reporting/Template_zoom.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="div-plus bg-grey-alt2">
+            <div class="container text-light pt-3 pb-5">
+                <div class="row">
+                    <div class="col align-self-center text-left">
+                        <h5 class="text-primary">Editor</h5>
+                        <h2>Prototype and Test directly in the Editor</h2>
+                        <p class="mt-4">
+                            After loading a template you decide which concrete data should be asssigend to the variables by selecting filters related
+                            to seasons, races, sessions or drivers. The reporting engine populates the templates variables
+                            automatically and transforms it to a full report.
+                        </p>
+                        <p>
+                            There is no restriction in what data can be used to populate the report. Naturally any data stored in RC Platform can be
+                            used but if necessary you can also manually insert data.
+                        </p>
+
+                        <p>
+                            Reusing templates for e.g. different sessions isn't a problem. You can also use them for dashboards which update in real-time.
+                        </p>
+                    </div>
+                    <div class="col align-self-center text-center mt-5">
+                        <a href="#" data-toggle="modal" data-target="#reportModal">
+                            <img class="img-fluid d-block" alt="Tyre Report" src="/resources/reporting/Tyre Pressures Report_mid.png">
+                        </a>
+                        <p>
+                            Using above examples template over two sessions, repeated for every lap.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-large" data-dismiss="modal" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div>
+                            <img class="img-fluid mx-auto d-block" alt="Tyre Report Large" src="/resources/reporting/Tyre Pressures Report_large.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="">
+            <div class="container text-dark pt-5 pb-5">
+                <div class="row">
+                    <div class="col align-self-center text-center mt-5">
+                        <img class="img-fluid d-block" alt="Report Export Options" src="/resources/mathmodule/MathExportOptions.png">
+                    </div>
+                    <div class="col align-self-center text-left">
+                        <h5 class="text-primary">Exporting</h5>
+                        <h2>Add to reports</h2>
+                        <p class="mt-4">
+                            Reports or only specific segements of reports can be exported to common document types without any problems. You can use
+                            them where you want.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contactDiv" class="py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>CONTACT US</h1>
+                        <p class="text-center lead">Request a demo or ask us anything else you want to know.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-6 p-5 bg-primary">
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="First Name" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="Last Name" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="email" name="Email" class="form-control" placeholder="Email address*" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="tel" name="Telephone" class="form-control" placeholder="Phone number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="Company Name" class="form-control" placeholder="Company name">
+                            </div>
+                            <div class="form-group">
+                                <textarea type="text" name="Message" class="form-control mt-5" rows="5" placeholder="Enter your message*" required></textarea>
+                            </div>
+                            <input type="submit" value="Send" class="btn btn-second btn-lg float-right">
+                        </form>
+                    </div>
+                    <div class="col-3 pl-5 pt-5 bg-primary text-white left-border">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <strong>Call</strong>
+                            </div>
+                            <div class="col">
+                                <a class="text-white" href="tel:+4915168156011">
+                                    <nobr>+49-151-68156011</nobr>
+                                </a>
+                                <p>
+                                    <nobr>Gabriel Baumgärtner,</nobr> Director
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <strong>Email</strong>
+                            </div>
+                            <div class="col">
+                                <a class="text-white" href="mailto:gab@rcplatform.net">Gab@RCPlatform.net</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact -->
+    </main>
+
+    <!-- Alerts -->
+    <div id="successAlert" class="alert alert-success alert-fixed" role="alert">
+        <div class="alert-content">
+            <h4 class="alert-heading">Thanks.</h4>
+            <p>Your message has been successfully sent. We'll be in touch with you soon.</p>
+        </div>
+    </div>
+
+    <div id="failAlert" class="alert alert-danger alert-fixed" role="alert">
+        <div class="container justify-content-center">
+            <h4 class="alert-heading">Sorry!</h4>
+            <p>Sorry, something went wrong. Please fill out the email and message fields and try again.</p>
+        </div>
+    </div>
+    <!-- End Alerts -->
+
+    <footer class="footer bg-dark text-muted">
+        <div class="container-fluid text-right py-2">
+            <div class="d-flex flex-row justify-content-end">
+                <div class="p-2">&copy; 2018 Baumgärtner Ltd. All Rights Reserved.</div>
+                <a href="/impressum.html" class="text-muted p-2" style="text-decoration: none;">Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+    <script src="/js/contact.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114379055-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114379055-1');
+    </script> -->
+
+</body>
+
+</html>
