@@ -4,7 +4,7 @@
   "description": "awesmoem rc website",
   "main": "index.js",
   "scripts": {
-	"start": "npx gulp",
+    "start": "npx gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

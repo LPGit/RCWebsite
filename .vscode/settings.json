@@ -7,7 +7,7 @@
         "RCWebsite/src/mstile*": true,
         "RCWebsite/src/browserconfig.xml": true,
         ".deployment": true,
-        "RCWebsite/package.json": true,
+        "RCWebsite/package.json": false,
         "RCWebsite/package-lock.json": true,
         ".vscode": true,
     }
