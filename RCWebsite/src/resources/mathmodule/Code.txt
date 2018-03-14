@@ -1,0 +1,21 @@
+// code examples
+
+// break balance (output: channel)
+(brake_front / (brake_front + brake_rear) * 100)
+.Where(20 < brake_front)
+
+
+// break amount (output: number)
+brake_front.TimeIntegral();
+
+
+// DRS (output: boolean)
+(Timing.Lap > 3 && Timing.GapS1 < 1 && Wige.DRSCount < 10)
+
+
+// rake (output: number)
+Setup.rideheight_rear - Setup.rideheight_front
+
+
+// easy lookup tables (output: channel)
+table.MapPerSample(brake_front)
