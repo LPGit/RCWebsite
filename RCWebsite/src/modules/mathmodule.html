@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="contains-subnav">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
         <div class="container">
@@ -33,9 +33,9 @@
             <div class="collapse navbar-collapse flex-column-reverse align-items-end" id="navbarsExampleDefault">
 
                 <!-- Bottom Links -->
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav postion-relative">
                     <li class="nav-item">
-                        <a class="nav-link-large" href="/">Home
+                        <a class="nav-link-large ml-3" href="/">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -52,6 +52,25 @@
                         </div>
                     </li>
 
+                    <ul class="nav navbar-nav subnav">
+                        <li class="nav-item">
+                            <a class="nav-link-large ml-3" href="/modules/CornerTimes.html">CornerTimes</a>
+                        </li>
+
+                        <li class="nav-item active-primary">
+                            <a class="nav-link-large" href="/modules/MathModule.html">Math</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-large ml-3" href="/modules/Reporting.html">Reporting</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link-large" href="/modules/Runsheet.html">Runsheet</a>
+                        </li>
+                    </ul>
+
+                    <div class="subnav-bg"></div>
+
                     <li class="nav-item">
                         <a class="nav-link-large ml-3" href="/contact.html">Contact</a>
                     </li>
@@ -60,7 +79,6 @@
                         <a class="nav-link-large" href="/company.html">Company</a>
                     </li>
 
-                    </li>
                 </ul>
             </div>
         </div>
@@ -69,7 +87,9 @@
     <main>
         <div class="jumbo-fluid bg-primary py-5 text-white">
             <div class="container">
-                <h1 class="text-module-title">Math<span> Module</span></h1>
+                <h1 class="text-module-title">Math
+                    <span> Module</span>
+                </h1>
             </div>
         </div>
 
