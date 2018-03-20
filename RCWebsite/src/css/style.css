@@ -353,7 +353,7 @@ h6, .h6 {
   font-weight: 300;
   line-height: 1.2; }
 
-.display-3 {
+.display-3, .text-module-title {
   font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2; }
@@ -5985,7 +5985,7 @@ button.bg-grey-alt2:hover {
 .text-right {
   text-align: right !important; }
 
-.text-center {
+.text-center, .text-module-title {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -6187,6 +6187,12 @@ a.text-grey-alt2:focus, a.text-grey-alt2:hover {
 .text-primary-alt {
   color: #ff7B22; }
 
+.text-module-title {
+  font-weight: 500; }
+  .text-module-title span {
+    color: #1067c2;
+    font-style: italic; }
+
 .bg-grey-alt {
   background-color: #F5F5F5 !important; }
 
@@ -6246,8 +6252,9 @@ body {
     background-repeat: no-repeat; } }
 
 @media (max-width: 991.99px) {
-  .jumbotron .display-3,
-  .jumbo-fluid .display-3 {
+  .jumbotron .display-3, .jumbotron .text-module-title,
+  .jumbo-fluid .display-3,
+  .jumbo-fluid .text-module-title {
     font-size: 2.5rem !important; } }
 
 .main-jumbotron4 {

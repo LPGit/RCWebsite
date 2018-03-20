@@ -10,13 +10,14 @@ $carousel-indicator-active-bg: #ff7B22;
 $carousel-control-color: #ff7B22;
 $enable-rounded: false;
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
 .svg-color {
     color: #6e6e6e; //110 110 110
 }
+
 .dcarousel-control-next {
     width: 100%;
 }
+
 .svg-primary {
     color: theme-color("primary");
 }
@@ -33,6 +34,17 @@ $enable-rounded: false;
     color: theme-color("primary-alt");
 }
 
+.text-module-title {
+    @extend .display-3,
+    .text-center;
+    font-weight: 500;
+    span {
+        //@extend .ml-5;
+        color: #1067c2;
+        font-style: italic;
+    }
+}
+
 .bg-grey-alt {
     background-color: theme-color("grey-alt") !important;
 }
@@ -41,8 +53,7 @@ $enable-rounded: false;
     background-color: theme-color("grey-alt2") !important;
 }
 
-$primary-light:lighten(theme-color("primary"),
-5%);
+$primary-light:lighten(theme-color("primary"), 5%);
 .bg-primary-light {
     background-color: $primary-light !important;
 }
