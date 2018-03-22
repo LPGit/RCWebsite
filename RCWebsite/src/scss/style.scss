@@ -5,7 +5,7 @@
 // primary rgb: 33 147 243
 // primary-alt rgb: new #ff7B22 (old: 233 80 15 #ff5722)
 // material design darker organe #FF3D00
-$theme-colors: ( "primary": #2193f3, "primary-alt":#ff7B22, "grey-alt":#F5F5F5, "grey-alt2":#444444);
+$theme-colors: ( "primary": #2193f3, "primary-alt":#ff7B22, "grey-alt":#F5F5F5, "grey-alt2":#444444, "text-module":#1067c2);
 $carousel-indicator-active-bg: #ff7B22;
 $carousel-control-color: #ff7B22;
 $enable-rounded: false;
@@ -34,13 +34,17 @@ $enable-rounded: false;
     color: theme-color("primary-alt");
 }
 
+.text-module {
+    color: theme-color("text-module");
+}
+
 .text-module-title {
     @extend .display-3,
     .text-center;
     font-weight: 500;
     span {
         //@extend .ml-5;
-        color: #1067c2;
+        @extend .text-module;
         font-style: italic;
     }
 }
@@ -91,9 +95,6 @@ $shadow-color: #3f3f3f;
     }
     nav {
         padding-bottom: 50px;
-        li>a {
-            @extend .text-muted
-        }
     }
 }
 
@@ -103,7 +104,7 @@ $shadow-color: #3f3f3f;
 
 .nav-link-large {
     @extend .nav-link;
-    @extend .text-dark;
+    @extend .text-muted;
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.7em;
@@ -135,11 +136,25 @@ $shadow-color: #3f3f3f;
 
 .subnav {
     @extend .pb-2;
-    position: absolute; //left: 0;
-    bottom: 0;
+    position: absolute;
+    bottom: 0; //left: 740px;
     width: 100%;
-    z-index: 10;
-    //font-style: italic;
+    z-index: 10; //font-style: italic;
+}
+
+.nav-link-large-sub {
+    @extend .nav-link-large;
+    color: #555 !important;
+}
+
+.subnav::before {
+    @extend .nav-link-large,
+    .ml-3;
+    content: "Modules:";
+    color: #555 !important;
+    width: 100;
+    position: absolute;
+    left: -110px;
 }
 
 .subnav-bg {
@@ -154,7 +169,7 @@ $shadow-color: #3f3f3f;
 
 .subnav .active-primary {
     border-bottom: 2px solid;
-    border-color: #2193f3;
+    border-color: theme-color("primary");
 }
 
 .footer {
