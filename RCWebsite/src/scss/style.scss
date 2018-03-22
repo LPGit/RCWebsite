@@ -89,12 +89,14 @@ $shadow-color: #3f3f3f;
     }
 }
 
-.contains-subnav {
-    main {
-        margin-top: 105px;
-    }
-    nav {
-        padding-bottom: 50px;
+@include media-breakpoint-up(md) {
+    .contains-subnav {
+        main {
+            margin-top: 105px;
+        }
+        nav {
+            padding-bottom: 50px;
+        }
     }
 }
 
@@ -134,42 +136,61 @@ $shadow-color: #3f3f3f;
     pointer-events: none;
 }
 
-.subnav {
-    @extend .pb-2;
-    position: absolute;
-    bottom: 0; //left: 740px;
-    width: 100%;
-    z-index: 10; //font-style: italic;
-}
-
 .nav-link-large-sub {
-    @extend .nav-link-large;
-    color: #555 !important;
+    @extend .nav-link-large; //color: #555 !important;
 }
 
-.subnav::before {
-    @extend .nav-link-large,
-    .ml-3;
-    content: "Modules:";
-    color: #555 !important;
-    width: 100;
-    position: absolute;
-    left: -110px;
+.nav-md-menu-label {
+    @extend .text-muted;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.7em;
+    margin: 0 0.1em;
+    padding: 0;
 }
 
-.subnav-bg {
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    left: 0;
-    bottom: 0;
-    background: #F6F6F6;
-    z-index: 9;
+// so links for modules in menu on phones have left indention
+.subnav {
+    margin-left: 20px;
 }
 
-.subnav .active-primary {
-    border-bottom: 2px solid;
-    border-color: theme-color("primary");
+@include media-breakpoint-up(md) {
+    .subnav {
+        padding-bottom: 0.5rem !important;
+        position: absolute;
+        bottom: 0; //left: 740px;
+        margin-left: 0px;
+        width: 100%;
+        z-index: 10; //font-style: italic;
+    }
+    .subnav::before {
+        content: "Modules:";
+        font-size: 1.5em;
+        font-weight: 300;
+        line-height: 1.7em;
+        margin: 0 0.1em;
+        padding: 0;
+        color: #555 !important;
+        width: 100;
+        position: absolute;
+        left: -100px;
+    }
+    .nav-link-large-sub {
+        color: #555 !important;
+    }
+    .subnav-bg {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0;
+        bottom: 0;
+        background: #F6F6F6;
+        z-index: 9;
+    }
+    .subnav .active-primary {
+        border-bottom: 2px solid;
+        border-color: theme-color("primary");
+    }
 }
 
 .footer {
