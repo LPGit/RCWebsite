@@ -1,0 +1,25 @@
+activate google analytics
+domain setup (https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain)
+dynamic rideheight report
+formbucket autoresponse not working
+
+selected text color shouldn't be blue if background blue
+add useful pdfs  
+make platform diagram responsive
+
+add new row with export features to Platfrom, index?
+more distingushable banners
+better email with picture and who we are introductory
+more distinctive pages show name in navbar perhaps
+check loading times
+fix footer text linebreaking
+
+
+
+(Channels.brake_front / (Channels.brake_front + Channels.brake_rear) * 100).Where(Channels.brake_front > 20)
+(brake_front / (brake_front + brake_rear) * 100).Where(brake_front > 20)
+
+
+[20:52, 3/2/2018] Gab: Bei dynamic rideheight kommt wirklich nur n channel raus. Heisst die tabelle würde lapwise vielleicht topspeed, wing setting, springs enthalten und dann n link zum plot
+[20:53, 3/2/2018] Gab: Wenn wirklich nur um den plot geht würde der halt die influencer auf die formel enthalten.
+Speed, brake, steer, dyn rdh
