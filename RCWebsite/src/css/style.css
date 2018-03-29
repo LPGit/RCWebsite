@@ -6413,9 +6413,10 @@ main {
     bottom: 0;
     background: #F6F6F6;
     z-index: 9; }
-  .subnav .active-primary {
+  .active-primary-underline {
     border-bottom: 2px solid;
-    border-color: #2193f3; } }
+    border-color: #2193f3;
+    color: #2193f3 !important; } }
 
 .footer {
   position: absolute;

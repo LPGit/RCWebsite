@@ -187,10 +187,12 @@ $shadow-color: #3f3f3f;
         background: #F6F6F6;
         z-index: 9;
     }
-    .subnav .active-primary {
+    .active-primary-underline {
         border-bottom: 2px solid;
         border-color: theme-color("primary");
+        color: theme-color("primary") !important;
     }
+
 }
 
 .footer {
