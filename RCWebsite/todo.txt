@@ -4,6 +4,7 @@ dynamic rideheight report
 formbucket autoresponse not working
 clean up especially remove pictures from server
 move repository to private from gab
+optimize check image sizes
 
 selected text color shouldn't be blue if background blue
 add useful pdfs  
