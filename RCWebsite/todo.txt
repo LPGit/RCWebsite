@@ -2,6 +2,8 @@ activate google analytics
 domain setup (https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain)
 dynamic rideheight report
 formbucket autoresponse not working
+clean up especially remove pictures from server
+move repository to private from gab
 
 selected text color shouldn't be blue if background blue
 add useful pdfs  
